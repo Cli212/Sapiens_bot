@@ -1,0 +1,16 @@
+jobs:
+    build:
+        # ...
+        steps:
+            # ...
+            - name: Build an action server
+              uses: Cli212/Sapiens_bot@main
+              with:
+                docker_image_name: 'howey212/rasax_actions'
+                # More details on how to use GitHub secrets:
+                # https://docs.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets
+                docker_registry_login: ${{ secrets.DOCKER_HUB_LOGIN }}
+                docker_registry_password: ${{ secrets.DOCKER_HUB_PASSWORD }}
+                # More details about github context:
+                # https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#github-context
+                docker_image_tag: ${{ github.sha }}
