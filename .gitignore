@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+models/
+rasa-voice-interface/
+tts_out.wav
+voice/
