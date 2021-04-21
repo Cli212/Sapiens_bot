@@ -56,6 +56,13 @@ stories:
   - intent: sapiens_question
   - action: action_cdqa
 
+- story: tell more about last paragraph
+  steps:
+  - intent: tell_more
+  - slot_was_set:
+      - last_paragraph: true
+  - action: action_tell_more
+
 - story: qa of sapiens
   steps:
   - intent: sapiens_question

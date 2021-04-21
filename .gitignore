@@ -131,3 +131,7 @@ models/
 rasa-voice-interface/
 tts_out.wav
 voice/
+results/
+train_test_split/
+qa_questions.yml
+

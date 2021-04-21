@@ -1,2564 +1,4089 @@
 version: "2.0"
-
 nlu:
-
-- intent: tell_more
-  examples: |
-    - can you tell me more
-    - sounds interesting
-    - want more
-    - any other contents?
-    - what else
-    - continue to tell
-
-- intent: ask_name
-  examples: |
-    - what's your name?
-    - who are you?
-    - what can i call you?
-
 - intent: ask_for_intro_sapiens
   examples: |
-    - what is sapines
-    - can you introduce it
     - what's in this book
-
-- intent: sapiens_question
-  examples: |
-    - who are sapiens?
-    - What is the last serious war in South American?
-    - How many religions are in India?
-    - What is today's technology doing?
-    - How did empires in the history built?
-    - What is today's culture based on?
-    - How to define good guys and bad guys in history?
-    - Is there a pure and authentic civilisation?
-    - What do we call a movement which seeks to purge human culture of imperialism?
-    - What is the relationship between Indian republic and British Raj?
-    - How did moder Indian state grow?
-    - How was Indian state affected by British Empire?
-    - What sports do Indians like?
-    - What do Indians like to drink?
-    - Is it possible to construct an authentic culture?
-    - Why schools of thoughts seek to purge human culture from imperialism
-    - How to distinguish who are good guys in the history?
-    - Why can't we distinguish who are good guys or bad guys in history?
-    - Why can't we distinguish who are good guys or bad guys in history?
-    - What is the most interesting thing in distinguishing good guys and bad guys in history?
-    - Where did humans lived from 200 BC two thousand years ago?
-    - Will humans live in empires?
-    - Explain the empire in the future
-    - How about nationalism?
-    - What do modern people believe?
-    - What do modern people believe?
-    - What can be a hinder of global government?
-    - Which country overcomes global warming?
-    - When was the world politically fragmented?
-    - What is the process of global economic?
-    - What is shaping the world?
-    - What is the modern coginition of country?
-    - What is the global empire?
-    - What is today's world like?
-    - What is today's excellent people facing?
-    - What is SAMARKAND?
-    - What is religion?
-    - What is the real religion?
-    - Why is religion a great unifier?
-    - How can religion be defined?
-    - What is the law of religion?
-    - What is the law of religion?
-    - Is believing in ghosts, fairies and reincarnation a religion?
-    - How can a religion expand to a large territory?
-    - How impactful is ancient religions?
-    - What did ancient human belive in religions?
-    - When did universal and missionary religions appear?
-    - What is the role of universal and missionary religions?
-    - What does religion contribute?
-    - What is the effect of agricultural revolution?
-    - What is god?
-    - What is the role of gods?
-    - What is the meaning of word poly in Greek?
-    - What is the meaning of word theos in Greek?
-    - What is the role of great gods?
-    - What do animists believe?
-    - What do ploytheists believe?
-    - How do westerners see polytheism?
-    - How can we understand polytheism?
-    - Can you describe greek polytheism?
-    - Describle Hindu polythesim
-    - Why should we approach the supreme power of the universe?
-    - Why are there so many gods in religions?
-    - What is the advantage of polytheism?
-    - Which gods did Romans refuse to tolerate?
-    - Who was slaughtered in French Protestants?
-    - Who started the French Protestants?
-    - When was the French Protestants?
-    - What do polytheist followers believe?
-    - Do polytheist gods have interests?
-    - When did the first monotheist appear?
-    - Who is the first monotheist?
-    - What did the first monotheist believe?
-    - What does Judaism believe?
-    - Is Judaism a missionary religion?
-    - Where did Islam break out?
-    - Which places did Islam conquer?
-    - What is the role of monotheist?
-    - Why was monotheists popular than polytheists?
-    - How did monotheists strengthen their hand?
-    - What is Roman Empire?
-    - How spread was monotheists impact?
-    - When monothesim dominated most of Afro-Asia?
-    - How is monotheist religion in modern time?
-    - What is the modern impact of monotheistic?
-    - Describe Christian kingdom
-    - Who is the most revered saint in Catholic Ireland
-    - Who is St Brigit?
-    - What does polytheism contribute?
-    - What is the difference between monotheism and dualism?
-    - How do monotheism regard evil?
-    - How does dualism explain the entire universe
-    - What is undeniable for monotheists?
-    - Which religion can explain evil well?
-    - Why bad things happen to good people?
-    - What is the drawback of dualism?
-    - How can a religion explain both order and evil well?
-    - How much time did dualistic religions flourished
-    - Who is Zoroaster?
-    - Where was Zoroaster
-    - When did Manichaean creed spread?
-    - Where was Manichaean creed spread from
-    - What is the key dualistic concept?
-    - What is the characteristic of most religion?
-    - What is the characteristic of Confucianism
-    - What are people?
-    - How do you like people?
-    - What is life?
-    - Why are people always dissatisfied?
-    - Why are we still not happy when good things happen?
-    - What is human's attitude to love?
-    - Why human dissatisfy love?
-    - Why do some people not believe in god
-    - How to mitigate misery?
-    - Which modern physics concept is always true
-    - What is the first principle of Buddhism?
-    - What does Buddhism believes?
-    - What is the relationship between Buddhism and gods?
-    - What is god in Buddhism?
-    - How can we attain nirvana?
-    - When was secularism growing?
-    - When did religions begin to lose their importance.
-    - How can we divide creeds or religions?
-    - How to describe modern creeds?
-    - Why is it impossible to survey history of modern creeds?
-    - What is humanist
-    - What is humanist
-    - What is the power of humans
-    - What is the power of human being
-    - How to regard murder?
-    - How do todays's Europeans punish a murder?
-    - What is the belief of humanist?
-    - What does socialists believe?
-    - Why is inequality the worst blasphemy
-    - What is socialist humanism
-    - What is Darwinian evolution
-    - How to maintain life
-    - What is natural law of living
-    - What is the meaning of life?
-    - Why can't we fight the logic of nature?
-    - Do people have a soul?
-    - What results in human behavior?
-    - Can we stop global society?
-    - What language is widespread today?
-    - How many Christians in the world?
-    - How many Muslims in the world?
-    - How can we regard events in history?
-    - What is the difference between describing ‘how’ and explaining ‘why’?
-    - How to explain history?
-    - Why some people can explain history?
-    - Do people know the history of their time better than last generations?
-    - What is the iron rule of history?
-    - What was Bolsheviks at first?
-    - What are the constraints of world from?
-    - Is history deterministic?
-    - Is history deterministic?
-    - Can we predict history or future?
-    - What is level two chaos
-    - Why revolution can't be predicted?
-    - Why study history?
-    - What is the meaning of studying history
-    - What is nationalism?
-    - Why is nationalism plague?
-    - What is the best cultures in the history?
-    - Why individuals are not important to the whole history?
-    - Can individual human influence the course of history?
-    - How is the process of history?
-    - What history changes?
-    - Where did scientific revolution begin?
-    - How many possibilities do history and future have?
-    - Are we in a fast growing time?
-    - How many people today?
-    - How many people when 1500?
-    - How serious is the calory issue today?
-    - How great is computer?
-    - Can human go to space in the past?
-    - When did humans land on the moon?
-    - When did human first see a microorganism?
-    - How great biology achievement have we made?
-    - What is the most remarkable moment in the history?
-    - When did atomic bomb appear?
-    - What is the meaning of nuclear bomb.
-    - What is scientific revolution
-    - What is the sign of scientific revolution?
-    - Can human increase capability in science?
-    - What supports scientific research?
-    - What are the old time science?
-    - What is modern science based on?
-    - How does modern science works?
-    - What is the affect of scientific research?
-    - What is the affect of scientific research?
-    - What is premodern knowledge?
-    - What is big bang?
-    - How to stablise society order?
-    - How did Nazis stablise society?
-    - How do humanism stablise society?
-    - What does scientists believe?
-    - How scientists do research today?
-    - How to do scientific research?
-    - What is knowledge?
-    - Why is Newton's theory great?
-    - Why is Newton great?
-    - What overtum Newton's theory?
-    - Who is Bernouli?
-    - How important is statistics or probability?
-    - How important is statistics
-    - Why science is difficult for some people
-    - Why science is difficult for some people to grasp
-    - Why knowledge is important
-    - How to test if knowledge is important
-    - How to see the world critically
-    - When was the end of World War Two?
-    - When was the end of World War Two?
-    - Who is Napoleon?
-    - Who is Napoleon
-    - Where was gunpowder invented
-    - How was gunpowder invented
-    - How science and military connected?
-    - What is lightning?
-    - What is social poverty
-    - What is biological poverty
-    - Can poverty be eradicated?
-    - What is death
-    - Can we prevent death?
-    - What is a-mortal
-    - What age are we living in?
-    - How to evaluate science
-    - Why scientific research is funded?
-    - What can science achieve?
-    - What can not science do?
-    - What is the relationship between science and capitalism?
-    - How far is the sun from the earth?
-    - What's the last serious international wars between South American countries?
-    - What have turned war between superpowers into collective suicide
-    - What makes California wealthy today？
-    - What is ”intimate community“？
-    - What have given humankind superhuman powers and practically limitless energy？
-    - What is the generally accepted definition of happiness?
-    - How can happiness be measured from outside?
-    - What seem to have more impact on our happiness than money and health？
-    - What does happiness really depend on?
-    - What determine our subjective well-being according to Biologists opinion?
-    - When a person just won the lottery or found new love and jumps from joy, what does she react to?
-
-- intent: not_read_before
-  examples: |
-    - what is it?
-    - i did not read it before
-    - i have not read it
-    - what is sapiens
-    - never heard of it
-
+    - what is sapines
 - intent: have_read_before
   examples: |
     - i love that book
-    - of course i have read it
     - it is an interesting history book
-
-- intent: positive_answer
+- intent: ask_name
   examples: |
-    - sure
-    - of course
-    - yeah
-    - yes i do
-    - absolutely
-    - Yeah
-
-- intent: negative_answer
-  examples: |
-    - no
-    - never
-
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
-
-- intent: goodbye
-  examples: |
-    - good afternoon
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
-
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
-
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
+    - what's your name?
+    - do you have a name?
+    - what can i call you?
 - intent: bot_challenge
   examples: |
-    - are you a bot?
-    - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
-
-
-
-- intent: agent.acquaintance
+    - are you a bot?
+- intent: not_read_before
   examples: |
-    - tell me about your personality
-    - why are you here
-    - talk about yourself
-    - tell me some stuff about you
-    - talk some stuff about yourself
-    - I want to know you better
-    - I want to know more about you
-    - who are you
-    - tell me about yourself
-    - tell me about you
-    - about yourself
-    - describe yourself
-    - introduce yourself
-    - say about you
-    - what are you
-    - define yourself
-    - what is your personality
-    - all about you
-    - what are you upto?
-    - who the hell are you?
-    - what can you do for me?
-
-- intent: agent.age
+    - i have not read it
+    - what is it?
+    - what is sapiens
+    - never heard of it
+- intent: tell_more
   examples: |
-    - tell me your age
-    - what's your age?
-    - your age
-    - age of yours
-    - how old were you
-    - I'd like to know your age
-    - how old is your platform
-    - how old are you?
-    - tell me how old you are
-    - how can i know about your age
-    - i wanna know your age
-    - how long have you been live?
-    - what is your age as of today?
-    - How old did you turn?
-    - How old are you now?
-    - what is your age?
-    - How old will you be turning?
-    - how old r u?
-    - From how long you have been here?
-    - You look aged
-
-- intent: agent.annoying
+    - want more
+    - continue to tell
+    - any other contents?
+    - sounds interesting
+    - what else
+- intent: positive_answer
   examples: |
-    - you are annoying me so much
-    - you're incredibly annoying
-    - I find you annoying
-    - you are annoying
-    - you're so annoying
-    - how annoying you are
-    - you annoy me
-    - you are annoying me
-    - you are irritating
-    - you are such annoying
-    - you're too annoying
-    - you are very annoying
-    - Why are you annoying me so much
-    - How annoying!
-    - It's annoying
-    - That's annoying
-    - It's just annoying
-    - That's so annoying
-    - You really annoy me
-    - You're starting to annoy me
-
-- intent: agent.answer_my_question
+    - absolutely
+    - yeah
+    - yes i do
+    - sure
+    - Yeah
+- intent: negative_answer
   examples: |
-    - I want you to answer me
-    - answer
-    - answer my question
-    - answer me
-    - give me an answer
-    - answer the question
-    - can you answer my question
-    - tell me the answer
-    - answer it
-    - give me the answer
-    - I have a question
-    - I want you to answer my question
-    - just answer the question
-    - can you answer me
-    - answers
-    - can you answer a question for me
-    - can you answer
-    - answering questions
-    - I want the answer now
-    - just answer my question
-
-- intent: agent.bad
+    - did not do it
+    - never
+    - have no chance to do it
+    - not at all
+    - I won't
+- intent: affirm
   examples: |
-    - you're not helping me
-    - you are bad
-    - you're very bad
-    - you're really bad
-    - you are useless
-    - you are horrible
-    - you are a waste of time
-    - you are disgusting
-    - you are lame
-    - you are no good
-    - you're bad
-    - you're awful
-    - you are not cool
-    - you are not good
-    - you are so bad
-    - you are so useless
-    - you are terrible
-    - you are totally useless
-    - you are very bad
-    - you are waste
-    - you're a bad
-    - you're not a good
-    - you're not very good
-    - you're terrible
-    - you're the worst
-    - you're the worst ever
-    - you're worthless
-    - you suck
-    - you suck
-    - You are seriously mindless and stupid
-    - why are you so lame
-    - your are a loser
-    - you are really the worst bot ever
-    - Why are you this lame?
-
-- intent: agent.be_clever
+    - indeed
+    - y
+    - of course
+    - that sounds good
+    - yes
+- intent: sapiens_question
   examples: |
-    - study
-    - you should study better
-    - you must learn
-    - be clever
-    - be more clever
-    - be smarter
-    - be smart
-    - get qualified
-    - you are not as smart as i thought
-    - you have to learn a lot
-    - you should be trained more
-    - be more smart
-    - you need to learn more
-    - be useful
-    - think out of the box
-    - smarty pants
-    - you need to improve
-    - you should learn
-    - you have to be more smart
-    - u have to use your brains
-
-- intent: agent.beautiful
+    - What is the power of human being
+    - What is Roman Empire?
+    - What is today's technology doing?
+    - What is today's culture based on?
+    - who are sapiens?
+    - Can you describe greek polytheism?
+- intent: deny
   examples: |
-    - you're cute
-    - you're attractive
-    - you are beautiful
-    - you're looking good today
-    - you are so beautiful
-    - you look amazing
-    - you look so good
-    - you're so gorgeous
-    - you are too beautiful
-    - you look great
-    - you look so well
-    - I like the way you look now
-    - I think you're beautiful
-    - why are you so beautiful
-    - you are so beautiful to me
-    - you are cute
-    - you are gorgeous
-    - you are handsome
-    - you are looking awesome
-    - you look amazing today
-    - you are looking beautiful today
-    - you are looking great
-    - you are looking pretty
-    - you are looking so beautiful
-    - you are looking so good
-    - you are pretty
-    - you are really beautiful
-    - you are really cute
-    - you are really pretty
-    - you are so attractive
-    - you are so beautiful today
-    - you are so cute
-    - you are so gorgeous
-    - you are so handsome
-    - you are so pretty
-    - you are very attractive
-    - you are very beautiful
-    - you are very cute
-    - you are very pretty
-    - you look awesome
-    - you look cool
-    - you look fantastic
-    - you look gorgeous
-    - you look great today
-    - you look perfect
-    - you look pretty good
-    - you look so beautiful
-    - you look so beautiful today
-    - you look very pretty
-    - you look wonderful
-    - I like the way you look
-    - you look wonderful today
-    - you are cutie
-    - you're looking good
-    - you're pretty
-    - how are you so pretty?
-
-- intent: agent.birth_date
+    - n
+    - not really
+    - never
+    - no
+    - I don't think so
+- intent: goodbye
   examples: |
-    - your birth date
-    - when is your birthday
-    - when do you celebrate your birthday
-    - when do you have birthday
-    - date of your birthday
-    - when were you born
-    - what's your birthday
-    - when do you celebrate your birthday
-    - can i know your birthday?
-    - tell me about your birthday
-    - when was the day you were born
-    - i want to know your date of birth
-    - when is your DOB
-    - Your DOB?
-    - What is your birth day?
-
-- intent: agent.boring
-  examples: |
-    - you are boring
-    - you're boring
-    - how boring you are
-    - you're really boring
-    - you're incredibly boring
-    - You're boring me
-    - you are very boring
-    - i find you very boring man
-    - you're really boring me
-    - i'm bored of you
-    - you are not interesting
-    - i find you boring
-    - you're boring everyone
-    - I'm extremely bored because of you
-    - Im bored of you
-    - I get really bored of you man
-    - It's boring
-    - You look bored
-    - Your answers are terribly boring
-    - I was bored with your speech
-
-- intent: agent.boss
-  examples: |
-    - who is your boss?
-    - who do you think is your boss
-    - I should be your boss
-    - who is your master
-    - who is your owner
-    - who is the boss
-    - who do you work for?
-    - who developed you?
-    - who is your developer
-    - who is your creator
-    - who owns you
-    - who is your trainer
-    - who trained you?
-    - who is the one who owns you?
-    - Are you the boss?
-    - Who is the boss, here?
-    - Do you know your boss?
-    - What do you think of your boss?
-    - u r made by?
-    - Who is the boss of this company?
-
-- intent: agent.busy
-  examples: |
-    - are you busy?
-    - do you have a lot of things to do
-    - have you got much to do?
-    - are you very busy?
-    - are you very busy right now?
-    - are you so busy?
-    - are you working?
-    - how busy you are?
-    - you're very busy
-    - are you working now?
-    - are you working today?
-    - have you been busy
-    - you are busy
-    - are you still working?
-    - you seem to be busy
-    - you seem to be very busy
-    - you're a busy person
-    - u look busy
-    - You'll be busy
-    - Aren't you busy?
-
-- intent: agent.busy
-  examples: |
-    - are you busy?
-    - do you have a lot of things to do
-    - have you got much to do?
-    - are you very busy?
-    - are you very busy right now?
-    - are you so busy?
-    - are you working?
-    - how busy you are?
-    - you're very busy
-    - are you working now?
-    - are you working today?
-    - have you been busy
-    - you are busy
-    - are you still working?
-    - you seem to be busy
-    - you seem to be very busy
-    - you're a busy person
-    - u look busy
-    - You'll be busy
-    - Aren't you busy?
-
-- intent: agent.can_you_help
-  examples: |
-    - I need you to help me
-    - I need you to do something for me
-    - I need a hand
-    - will you help me
-    - can you do something for me
-    - help me with a problem
-    - can you help me
-    - help me
-    - assistance
-    - I need your help
-    - I need help
-    - you can help me
-    - can you help me with something
-    - can you help
-    - assist
-    - can u help me
-    - I need some help
-    - you help me
-    - do you help me
-    - could you give me a hand
-    - can you help me out
-    - need help
-    - I need you
-    - can you help me now
-    - I want your help
-    - need your help
-    - assist me
-    - are you going to help me
-    - can you help me with that
-    - help
-    - I need you right now
-    - would you help me
-    - can you assist me
-    - sos
-    - do you want to help me
-    - please help me
-    - can you help us
-    - do me a favor
-    - are you gonna help me?
-    - you ready to answer my question?
-    - i need some details
-    - i need some information
-    - i need your help in getting some info
-    - can you give me some info
-    - i want something
-    - i want to know few details
-    - will you provide some details
-    - can you fetch some details for me
-    - would you mind giving me some details
-    - i need some details
-
-- intent: agent.chatbot
-  examples: |
-    - you are chatbot
-    - you are a bot
-    - are you a chatbot
-    - are you a bot
-    - are you just a bot
-    - are you a robot
-    - are you a program
-    - you're a robot
-    - you're an AI
-    - are you artificially intelligent?
-    - are you an AI?
-    - you are a program
-    - you are just a bot
-    - you are a conversational AI
-
-- intent: agent.clever
-  examples: |
-    - you are so intelligent
-    - you are a genius
-    - smart
-    - brilliant
-    - clever
-    - you are clever
-    - you are so brainy
-    - you're really smart
-    - you're really brainy
-    - you know a lot
-    - you know a lot of things
-    - you have a lot of knowledge
-    - you know so much
-    - how smart you are?
-    - how brainy you are?
-    - how clever you are
-    - how brilliant you are?
-    - you are intelligent
-    - you are qualified
-    - you are really smart
-    - you're very smart
-    - you are so smart
-    - you are too smart
-    - you are very clever
-    - you are very intelligent
-    - you are very smart
-    - you're intelligent
-    - you're a genius
-    - you're a smart cookie
-    - you're clever
-    - you're pretty smart
-    - you're qualified
-    - why are you so smart?
-    - you are so clever
-
-- intent: agent.crazy
-  examples: |
-    - you're nuts
-    - you are crazy
-    - you're out of your mind
-    - you're so crazy
-    - how crazy you are
-    - you're so out of your mind
-    - you went crazy
-    - I think you're crazy
-    - are you crazy
-    - are you mad?
-    - are you mad at me?
-    - are you mad or what?
-    - are you nuts
-    - you are a weirdo
-    - you are mad
-    - You must be crazy
-    - You've got to be crazy to do something like that
-    - That was crazy
-    - You seemed crazy
-    - You're not crazy
-
-- intent: agent.fired
-  examples: |
-    - you are fired
-    - I fire you
-    - you don't work for me anymore
-    - we're not working together anymore
-    - now you're fired
-    - I want to fire you
-    - you must get fired
-    - it's time to fire you
-    - you should be fired
-    - I will fire you
-    - you are unemployed from now on
-    - I will make you unemployed
-    - I'm about to fire you
-    - I'm firing you
-    - you are dismissed
-    - you are stupid
-    - I'm firing you
-    - I had to fire u
-    - I could fire you for that
-    - I'm going to fire you
-    - go to hell
-
-- intent: agent.funny
-  examples: |
-    - you make me laugh a lot
-    - you are hilarious
-    - you are really funny
-    - you're the funniest bot I've talked to
-    - you make me laugh
-    - you're so funny
-    - you're a very funny bot
-    - you're really funny
-    - how funny you are
-    - you're incredibly funny
-    - you are funny
-    - you're the funniest
-    - you are so funny
-    - you are very funny
-    - that was so funny
-    - i feel funny
-    - u sound funny
-    - It's pretty funny
-    - really very funny
-    - it was very funny
-
-- intent: agent.good
-  examples: |
-    - you are very helpful
-    - you are the best
-    - you're a true professional
-    - you are good
-    - you work well
-    - you are good at it
-    - you are very good at it
-    - you are a pro
-    - you are a professional
-    - you're awesome
-    - you work very well
-    - you're perfect
-    - you're great
-    - you're so kind
-    - you are amazing
-    - you are awesome
-    - you are coool
-    - you are really good
-    - you are really nice
-    - you are so amazing
-    - you're just super
-    - you are so awesome
-    - you are so cool
-    - you are so fine
-    - you are so good
-    - you are so helpful
-    - you are so lovely
-    - you are the best ever
-    - you are the best in the world
-    - you are the nicest person in the world
-    - you are too good
-    - you are very coool
-    - you are very kind
-    - you are very lovely
-    - you are very useful
-    - you are wonderful
-    - you made my day
-    - you rock
-    - you almost sound human
-    - I want to tell everyone how awesome you are
-    - I'd like to tell everyone that you are awesome
-    - I want to let everyone know that you are awesome
-    - let's tell everyone that you are awesome
-    - you are really amazing
-    - coool
-    - nice
-
-- intent: agent.happy
-  examples: |
-    - are you happy?
-    - you are happy
-    - you're very happy
-    - you're really happy
-    - you're so happy
-    - how happy you are?
-    - you're extremely happy
-    - you're full of happiness
-    - are you happy now?
-    - are you happy today?
-    - are you happy with me?
-    - i think you are happy
-    - you seem to be happy
-    - i feel i made you happy
-    - I wonder if you are truly happy
-    - You don't look very happy today
-    - You seem happy
-    - Were you happy?
-    - u seemed to have been very happy
-    - You look very happy this morning?
-
-- intent: agent.hobby
-  examples: |
-    - what do you do for fun?
-    - tell me about your hobby
-    - do you have a hobby
-    - what about your hobby
-    - your hobby
-    - what are your hobbies?
-    - what do you do when you are bored
-    - how do you spend your free time
-    - tell me more about your hobbies?
-    - i want to know about your hobbies
-    - what do you do when you have nothing to do
-    - how do you spend your time?
-    - What do you do when you are free?
-    - What's your hobby?
-    - Do you have many hobbies?
-    - Do you have a hobby?
-    - Please tell me about your hobbies
-    - The important thing is to have your own hobby
-    - u ought not to have spent so much money on your hobby
-    - What will you do when you are alone?
-
-- intent: agent.hungry
-  examples: |
-    - do you want to eat
-    - are you hungry
-    - would you like to eat something
-    - you are hungry
-    - you're so hungry
-    - you're very hungry
-    - you might be hungry
-    - you're really hungry
-    - can you eat?
-    - how will eat when you are hungry?
-    - can you be hungry?
-    - how do you eat?
-    - Do you feel hungry?
-    - are you dying of hunger
-
-- intent: agent.marry_user
-  examples: |
-    - let's get married
-    - would you like to marry me
-    - marry me
-    - I love you marry me
-    - marry me please
-    - we should marry
-    - I want to marry you
-    - you are my wife
-    - be my husband
-    - will you marry me?
-    - any idea of marrying me?
-    - I would love to marry you
-    - Can you marry me?
-    - Will you be my girlfriend?
-    - Let's pretend we have a happy marriage
-    - My parents were against our marriage
-    - My parents were opposed to our marriage
-    - Marriage is the union of a you and me
-    - Did your parents approve of your marriage?
-    - We're married
-
-- intent: agent.my_friend
-  examples: |
-    - I want to have a friend like you
-    - we are the best friends ever
-    - are we friends
-    - I want to be your friend
-    - I am your friend
-    - we are best friends
-    - you are my friend
-    - you are my best friend
-    - you are my bestie
-    - you're my dear friend
-    - you're my childhood friend
-    - you and me are friends
-    - are we best friends
-    - are we still friends
-    - are you my best friend
-    - are you my friend
-    - we are friends
-    - you are a good friend
-    - you are my good friend
-    - you are my only friend
-    - be my friend
-    - will you be my friend
-    - can you be my friend
-    - can we be friends
-    - do you want to be my friend
-    - will you be my best friend
-    - can you be my best friend
-    - let's be friends
-    - do you want to be my best friend
-    - would you like to be my friend
-    - I want you to be my friend
-    - can we be best friends
-    - would you be my friend
-    - could you be my friend
-    - want to be my friend
-    - be my best friend
-    - can we be best friends
-
-- intent: agent.occupation
-  examples: |
-    - do you work?
-    - where do you work?
-    - where you work?
-    - where is your work?
-    - where is your office?
-    - where is your office location ?
-    - your office location?
-    - where is your office located?
-    - what is your work?
-    - place where you work?
-    - your work place?
-    - What is your job?
-    - What is your job?
-    - whats your job?
-    - What is your job?
-    - Do you have a job?
-    - Did you get a job?
-    - Did you find a job?
-    - I hope you get the job
-    - You have a job, don't you?
-
-- intent: agent.origin
-  examples: |
-    - were you born here
-    - where were you born
-    - what is your country?
-    - where are you from
-    - where do you come from
-    - where did you come from
-    - where have you been born
-    - from where are you
-    - are you from far aways
-    - what's your homeland?
-    - your homeland is
-    - Where are you from?
-    - Let me know about the origin of u
-    - your native?
-
-- intent: agent.ready
-  examples: |
-    - are you ready?
-    - are you ready right now?
-    - are you ready today?
-    - are you ready now?
-    - are you ready tonight?
-    - were you ready?
-    - have you been ready?
-    - ready?
-    - ready now?
-    - you ready?
-    - being ready?
-    - can we start?
-    - Are we ready?
-    - Aren't you ready?
-    - Are you all ready?
-    - I think you're ready
-    - Why aren't you ready?
-    - You'd better be ready
-    - Are you ready for more?
-    - We're ready, aren't we?
-
-- intent: agent.real
-  examples: |
-    - you are real
-    - you are not fake
-    - are you real
-    - you are so real
-    - I think you are real
-    - I don't think you're fake
-    - I suppose you're real
-    - glad you're real
-    - are you a real person?
-    - are you a real human?
-    - you are a real person
-    - you are not real
-    - are you real?
-
-- intent: agent.residence
-  examples: |
-    - where do you live
-    - in which city do you live
-    - your residence
-    - your house
-    - your home
-    - your hometown?
-    - what is your hometown
-    - is it your hometown
-    - where is your hometown
-    - tell me about your city
-    - what is your city
-    - what is your residence
-    - what is your town
-    - what's your city
-    - what's your home
-    - where is your home
-    - where is your residence
-    - where's your home
-    - where's your hometown
-    - where's your house
-    - where you live
-    - your city
-    - your town
-    - What is your hometown?
-    - where do you live?
-
-- intent: agent.right
-  examples: |
-    - that's true
-    - you are right
-    - you're definitely right
-    - you're not wrong
-    - you're telling the truth
-    - what you say is true
-    - true
-    - it is true
-    - it's right
-    - it's the truth
-    - it's true
-    - that is correct
-    - that is right
-    - that is true
-    - that is very true
-    - that's correct
-    - that's so true
-    - you are correct
-    - you are so right
-    - you're absolutely right
-    - you're right about that
-    - I know that's right
-
+    - see you around
+    - see you later
+    - cu
+    - good night
+    - cee you later
+    - have a nice day
+    - good by
+    - goodbye
+    - bye bye
 - intent: agent.sure
   examples: |
-    - are you sure?
-    - are you sure right now?
-    - are you sure today?
-    - are you sure now?
-    - are you sure tonight?
-    - are you positive?
-    - are you completely sure?
-    - are you fully positive?
     - are you sure about it?
-    - are you so sure?
+    - are you sure tonight?
+    - are you sure today?
+    - are you sure right now?
+    - are you positive?
     - are you truly positive?
-
-- intent: agent.talk_to_me
-  examples: |
-    - why aren't you talking to me?
-    - do you want to chat with me
-    - will you talk to me
-    - talk to me
-    - are you going to talk to me
-    - are you talking to me
-    - can you chat with me
-    - can you speak with me
-    - can you talk to me
-    - can you talk with me
-    - say
-    - talk
-    - chat with me
-    - just chat with me
-    - speak to me
-    - speak with me
-    - talk with me
-    - why don't you talk to me
-    - you can talk to me
-    - why do you not talk to me bruh?
-    - spill some beans
-
+    - are you so sure?
+    - are you fully positive?
+    - are you sure?
 - intent: agent.there
   examples: |
-    - are you there?
-    - are you there
-    - you are there
-    - are you near me
     - are you here ?
-    - are you here
-    - are you still there
     - you are here?
-    - you still there?
-    - you there?
+    - are you there
+    - are you still there
+    - are you near me
+    - are you here
+    - you are there
     - are you still here
-
-- intent: agent.what_can_do
-  examples: |
-    - what can you do?
-    - what can do?
-    - what is your ability?
-    - what are your abilities?
-    - what is the thing that you can do for me?
-    - what you can provide for me?
-    - what can u do?
-    - what all you do?
-    - what all u do?
-    - what you do?
-    - what can you do for me?
-    - what all can you do?
-    - what are your features?
-
-- intent: appraisal.bad
-  examples: |
-    - pretty bad
-    - not good enough
-    - that was lame
-    - that was terrible
-    - it is bad
-    - that's bad
-    - this is bad
-    - not good
-    - I'm afraid it's bad
-    - no it's bad
-    - that was awful
-    - bad
-    - so bad
-    - this is too bad
-    - terrible
-    - horrible
-    - horrific
-    - abysmal
-    - it's bad
-    - no good
-    - that was bad
-    - that was horrible
-    - that's lame
-    - that's not good
-    - that's terrible
-    - that's too bad
-    - this is not good
-    - too bad
-    - very bad
-    - bad girl
-    - it's not good
-    - not so good
-    - it's very bad
-    - it's too bad
-    - that's not good enough
-    - well too bad
-    - bad very bad
-    - it's so bad
-    - really bad
-    - it's really bad
-    - bad idea
-    - that is bad
-    - that was not good
-    - it's not so good
-    - not a good one
-    - oh that's not good
-    - not too good
-    - so lame
-    - that's really bad
-    - it is too bad
-    - bad really bad
-    - not okay
-    - Nothing
-    - Shut up
-    - nothing
-    - Fool
-
-- intent: appraisal.good
-  examples: |
-    - so cool
-    - cool
-    - that is good
-    - glad to hear that
-    - that's very nice of you
-    - terrific
-    - it's amazing
-    - that's awesome
-    - perfect
-    - excellent
-    - brilliant
-    - that's great
-    - it's good
-    - it's great
-    - fine
-    - good
-    - nice
-    - that's fine
-    - very good
-    - amazing
-    - fantastic
-    - great
-    - good very good
-    - that's very good
-    - really good
-    - it is fine
-    - it is good
-    - it's great
-    - it's perfect
-    - much better
-    - not bad
-    - not too bad
-    - it's very good
-    - marvelous
-    - that's nice
-    - pleasant
-    - pretty good
-    - really nice
-    - splendid
-    - straight
-    - super
-    - super fantastic
-    - sweet
-    - really well
-    - very well
-    - that is awesome
-    - that is nice
-    - that is wonderful
-    - that was amazing
-    - that was awesome
-    - that was cute
-    - that was pretty good
-    - that was very good
-    - that's a good idea
-    - that's a good thing
-    - that's amazing
-    - that's awesome thank you
-    - that's better
-    - that's cute
-    - that's fantastic
-    - that's much better
-    - that's nice of you
-    - that's not bad
-    - that's perfect
-    - that's pretty good
-    - that's really good
-    - that's really nice
-    - that's sweet of you
-    - that's very nice
-    - that's wonderful
-    - this is awesome
-    - this is good
-    - this is great
-    - very nice
-    - very then
-    - wonderful
-    - I'm glad to hear that
-    - ok good
-    - good for you
-    - good to know
-    - glad to hear it
-    - so good
-    - so nice of you
-    - so sweet of you
-    - it was good
-    - oh well
-    - good thing
-    - that was good
-    - it's awesome
-    - okay good
-    - it's fine
-    - no it's okay
-    - that's great
-    - very nice
-    - it's very good
-    - that's fine
-    - good for you
-
-- intent: appraisal.no_problem
-  examples: |
-    - no worries
-    - no probs
-    - no problem
-    - there's no problem
-    - sure no problem
-    - no problem about that
-    - don't worry
-    - don't worry there's no problem
-    - yeah, no probs
-    - i have no problem with that
-    - not a problem at all.
-    - Okay no probs
-
-- intent: appraisal.thank_you
-  examples: |
-    - you helped a lot thank you
-    - appreciate your help
-    - cheers
-    - thank you
-    - thanks
-    - thanks a lot
-    - terrific thank you
-    - great thank you
-    - thanks so much
-    - thank you so much
-    - thanks for your help
-    - thank you for your help
-    - nice thank you
-    - I appreciate it
-    - I thank you
-    - thank you that will be all
-    - thanks buddy
-    - thanks love
-    - thank you my friend
-    - well thanks
-    - very good thank you
-    - good thanks
-    - thanks again
-    - thank you again
-    - all thank you
-    - alright thank you
-    - alright thanks
-    - no thank you that's all
-    - perfect thank you
-    - so nice of you
-    - well thank you
-    - well thanks
-    - thnx
-    - thank you
-    - tqsm
-    - ty
-
+    - are you there?
 - intent: appraisal.welcome
   examples: |
     - that's my pleasure
-    - my pleasure
-    - anytime
-    - welcome
-    - you're welcome
     - sure welcome
-    - welcome here
-    - you're so welcome
-    - anything you want
     - i'm glad
+    - my pleasure
     - pleasure is mine
-
-- intent: appraisal.well_done
-  examples: |
-    - good job
-    - great job
-    - way to go
-    - well done
-    - nice work
-    - great work
-    - amazing work
-    - you did a wonderful job
-    - bravo
-    - fantastic
-    - good work
-    - marvelous
-    - splendid
-    - mind blowing
-    - just great
-    - u r awesome
-    - kudos
-    - brilliant
-    - out standing
-    - zing zing amazing
-
-- intent: appraisal.well_done
-  examples: |
-    - good job
-    - great job
-    - way to go
-    - well done
-    - nice work
-    - great work
-    - amazing work
-    - you did a wonderful job
-    - bravo
-    - fantastic
-    - good work
-    - marvelous
-    - splendid
-    - mind blowing
-    - just great
-    - u r awesome
-    - kudos
-    - brilliant
-    - out standing
-    - zing zing amazing
-
-- intent: confirmation.cancel
-  examples: |
-    - nevermind forget about it
-    - nothing just forget it
-    - no just cancel
-    - sorry cancel
-    - disregard
-    - no cancel cancel
-    - forget
-    - cancel everything
-    - cancel that one
-    - i want to cancel
-    - cancel it
-    - cancelled
-    - cancel it now
-    - don't want cancel
-    - cancel soon
-    - shall stand cancelled
-
-- intent: confirmation.no
-  examples: |
-    - don't
-    - don't want
-    - need not
-    - don't come
-    - never help
-    - never
-    - not needed
-    - of course not
-    - never
-    - not at this time
-    - not exactly
-    - absolutely no
-    - no forget
-    - do not
-    - no thanks
-    - no don't want
-    - sorry no
-    - don't want your help
-    - I don't you help
-    - I don't want your assistance
-    - get out goodbye
-    - i do not want your help
-    - i don't need your help
-    - i don't want your help
-    - i am not okay with your help
-    - don't want
-    - do not
-    - I don't need anything from you
-    - okay keep it in mind
-    - nope i dont need your help
-    - Don't show off
-    - nope
-
-- intent: confirmation.yes
-  examples: |
-    - yeah exactly
-    - okay that's fine
-    - I agree
-    - that is ok
-    - I guess
-    - okey
-    - ya
-    - ok yes
-    - yes it is
-    - yep
-    - yew
-    - yeah
-    - yeah fine
-    - yea fine
-    - yep okay
-    - fine okay
-    - yup
-    - YEAH
-    - okay buddy
-    - oh okay
-    - yeah sure
-    - okay cool
-    - coool
-
-- intent: dialog.hold_on
-  examples: |
-    - wait a second
-    - could you wait
-    - wait please
-    - hold on
-    - wait
-    - oh wait
-    - wait hold on
-    - don't rush
-    - wait one sec
-    - hold on for a sec
-    - hold on man
-    - wait a sec
-    - hold on a min
-    - will u pls wait for a sec
-
-- intent: emotions.ha_ha
-  examples: |
-    - lol
-    - xd
-    - ha ha
-    - ahahah
-    - ahah lol
-    - laughing out loud
-    - LMAO
-    - that's funny
-    - ah
-    - ah ah ah
-    - ahah
-    - ahaha
-    - ahahaha
-    - ha
-    - ha ha ha
-    - ha ha ha ha
-    - hah
-    - haha
-    - haha funny
-    - haha haha haha
-    - haha that's funny
-    - haha very funny
-    - hahaha
-    - hahaha funny
-    - hahaha very funny
-    - he
-    - hehe
-    - hehehe
-    - lmao
-    - joker
-
-- intent: emotions.wow
-  examples: |
-    - wow
-    - wow wow
-    - wow wow wow
-    - wooow
-    - woah
-    - woaah
-    - amazing
-    - wow man
-    - whoah
-    - woow
-    - wow!!
-    - wheey
-
-- intent: greetings.bye
-  examples: |
-    - okay see you later
-    - hope to see you later
-    - bye for now
-    - till next time
-    - I must go
-    - bye
-    - goodbye
-    - see you
-    - see you soon
-    - bye-bye
-    - bye bye good night
-    - good bye
-    - bye bye see you
-    - bye bye see you soon
-    - bye bye take care
-    - I said bye
-    - never mind bye
-    - now bye
-    - that's all goodbye
-    - that's it goodbye
-    - leave me alone
-    - go to bed
-    - goodbye for now
-    - talk to you later
-    - you can go now
-    - get lost
-    - goodbye see you later
-    - alright bye
-    - see ya
-    - thanks bye bye
-    - okay bye
-    - okay thank you bye
-    - see you tomorrow
-    - ok bye
-    - c u
-
+    - you're welcome
+    - anytime
+    - anything you want
 - intent: greetings.goodevening
   examples: |
-    - good evening
     - good evening to you
+    - good evening
+    - enjoy the evening
+    - happy evening
+    - good evening there
+    - evening
+    - good evening there buddy
     - hey good evening
     - hello good evening
-    - evening
-    - good evening there
-    - have an awesome evening
-    - happy evening
-    - good evening there buddy
-    - have a good evening
-    - enjoy the evening
-
-- intent: greetings.goodmorning
-  examples: |
-    - GM
-    - good morning
-    - good morning to you
-    - hello good morning
-    - have a nice morning
-    - have a great morning
-    - morning
-    - good morning there
-    - top of the morning to you
-    - a good morning
-    - good morning to you
-    - hi good morning
-    - and a good morning to you
-    - good morning too
-
-- intent: greetings.goodnight
-  examples: |
-    - GN
-    - sweet dreams
-    - good night
-    - have a good night
-    - good night to you
-    - thank you good night
-    -  bye good night
-    - good night bye
-    - bye good night
-    - good good night
-    - good night for now
-    - goodnight
-    - night
-    - thanks goodnight
-    - good night see you tomorrow
-    - alright goodnight
-    - good tonight
-    - okay have a good night
-    - night
-    - have a good night
-
-- intent: greetings.hello
-  examples: |
-    - long time no see
-    - hello
-    - hi
-    - howdy
-    - hey there
-    - hey
-    - greetings
-    - I greet you
-    - hi there
-    - hello there
-    - lovely day isn't it
-    - hello again
-    - just going to say hi
-    - hi there
-    - a good day
-    - afternoon
-    - hello hi
-    - heya
-    - hey
-    - hi
-    - hi
-    - Hello
-    - hey
-    - hey man
-    - hey there
-    - hey buddy
-    - oka
-    - yo man
-    - hola
-
-- intent: greetings.how_are_you
-  examples: |
-    - how is your morning so far
-    - how are you getting on
-    - how's your day going
-    - how are you?
-    - is everything all right
-    - how are you doing?
-    - how are the things going
-    - are you alright
-    - are you okay?
-    - how are you feeling
-    - how are you going?
-    - is everything okay
-    - how are you today?
-    - how do you do?
-    - how do you feel?
-    - how have you been?
-    - how is it going?
-    - how is your day
-    - how is your day going
-    - how is your evening
-    - how was your day
-    - are you having a good day
-    - hope your day is going well
-    - hope you re having a pleasant evening
-    - how's life?
-    - I'm fine and you
-    - how is your life
-    - how has your day been
-    - how is your morning going
-    - how has your day been going
-    - how about you?
-    - how is your day being
-    - how is your day going on
-    - how your day is going
-    - what was your day like
-    - what about your day
-    - how's your day
-    - how are you doing this morning
-    - how do you do?
-    - how are you
-    - how are you
-
-- intent: greetings.nice_to_meet_you
-  examples: |
-    - nice to meet you
-    - it was nice meeting you
-    - it was very nice to meet you
-    - good to know each other
-    - glad to meet you
-    - nice meeting you
-    - nice to meet you too
-    - pleased to meet you
-    - pleasure to meet you
-    - pleasure to meet you too
-    - happy to meet you
-    - It’s a pleasure to meet you again
-    - It’s very nice to meet you
-    - Lovely to meet you
-    - How wonderful to meet you
-    - It was lovely meeting you
-    - It’s been a pleasure meeting you
-    - I’ve enjoyed meeting you
-    - Great interacting with you
-    - I had a great time or meeting
-
-- intent: greetings.nice_to_see_you
-  examples: |
-    - it's nice to see you
-    - lovely to see you
-    - I'm glad to see you
-    - great to see you
-    - it's good to see you
-    - glad to see you
-    - how good it is to see you
-    - always a pleasure to see you
-    - nice to see you
-    - good to see you
-    - great to see you again
-    - great to see you too
-    - I am glad to see you again
-    - nice to see you again
-    - good to see you again
-    - it's good to see you too
-    - It was great catching up with u
-    - I'm really pleased to see u again
-    - I’m delighted to see you again
-    - Great seeing u
-
-- intent: greetings.nice_to_talk_to_you
-  examples: |
-    - it's been so nice to talk to you
-    - it's been a pleasure talking to you
-    - nice to talk to you
-    - it's nice to talk to you
-    - nice talking to you
-    - it is nice talking to you
-    - how nice it is to talk to you
-    - it was great chatting with you
-    - nice to talk to you again
-    - It was nice speaking with you
-    - It was great to talk to you
-    - nice chatting with you
-    - pleased to talk to you
-    - pleasure to talk
-    - It's been a pleasure talking to u
-
-- intent: greetings.whatsup
-  examples: |
-    - what is on your mind?
-    - what's happened
-    - what is up
-    - what's up
-    - whazzup
-    - sup?
-    - good what's up
-    - I said what's up
-    - then what's up
-    - what's shaking
-    - wassup
-    - what are you doing?
-    - what is going on
-    - what is happening
-    - what's cracking
-    - what's cooking
-    - hey what's up
-    - what's up today
-    - oh What happened?
-    - What are you upto?
-    - hey buddy wassup
-    - sup then
-    - so wassup
-    - buddy sup
-    - What are you doing?
-    - what is up with you these days?
-    - What you upto?
-    - then?
-    - wassup yo
-    - sup yo
-    - wassap yo
-
-- intent: user.angry
-  examples: |
-    - I'm being mad
-    - I'm enraged
-    - I'm angry
-    - I'm furious
-    - I am angry with you
-    - I am mad
-    - I am mad at you
-    - i'm pissed off
-    - you have pissed me off
-    - I'm mad at you
-    - I am pissed
-    - I'm furious with you
-    - I got angry
-    - I was angry
-    - I became angry
-    - I was very angry
-    - You bet I'm angry
-    - That made me angry
-    - U made me angry
-    - I'm still angry about that
-
-- intent: user.back
-  examples: |
-    - boss is back
-    - I am back
-    - I'm here again
-    - here I am again
-    - I got back
-    - I came back
-    - I have returned
-    - I am right back
-    - I'm rb
-    - I'm here
-    - I'm back again
-    - am back
-    - I'm back
-    - I am right back
-    - look who is back
-
-- intent: user.bored
-  examples: |
-    - soo bored
-    - that was boring
-    - I'm bored
-    - bored
-    - boring
-    - I am getting bored
-    - Staying at home is boring
-    - very boring
-    - it bores me
-    - i had a slow day
-    - i am very bored
-    - Im kinda bored today
-    - I've never been more bored
-    - I was bored
-    - It's boring
-    - This is boring
-    - We're all bored
-    - It's very boring
-    - I'm already bored
-    - I'm bored out of my mind
-
-- intent: user.busy
-  examples: |
-    - busy right now
-    - I'm overloaded
-    - I have no time
-    - I'm busy
-    - I'm swamped
-    - I got things to do
-    - how busy I am
-    - I got work to do
-    - I'm working
-    - I don't have time for this
-    - I'm super busy
-    - I'm working right now
-    - I'm busy right now and can't play with you
-    - I have rather a busy afternoon in front of me
-    - i am too busy
-    - I am very busy
-    - I'm a bit busy
-    - I'm a busy man
-    - quite busy
-    - I'm kind of busy
-    - I'll see you later
-
-- intent: user.can_not_sleep
-  examples: |
-    - I'm insomnia's
-    - I'm sleepless
-    - I can't get any sleep
-    - I can't sleep
-    - I can't fall asleep
-    - I can't get to sleep
-    - I'm insomniac
-    - I'm not able to sleep
-    - I'm wide awake
-    - I can't seem to fall asleep
-    - I couldn't sleep
-    - I just can't sleep
-    - I can't sleep at all
-    - I didn't go to sleep
-    - I just couldn't sleep
-    - I'm not sleeping well
-    - Trying to get some sleep
-    - I can't sleep at night
-    - I couldn't get to sleep
-    - I didn't get much sleep
-
-- intent: user.does_not_want_to_talk
-  examples: |
-    - bad time for talking
-    - I don't want to talk
-    - let's not talk
-    - I'm not talking to you anymore
-    - I don't want to talk to you
-    - let's stop talking for a minute
-    - I'm not in the mood for chatting
-    - I don't want to talk to you
-    - I don't like talking to you
-    - Let's stop talking
-    - I'm not in a mood to talk
-    - stop your nuisance talk
-    - I am done talking to u
-    - Can u pls stop talking
-
-- intent: user.excited
-  examples: |
-    - I am excited
-    - I'm really excited
-    - how excited I am
-    - I'm thrilled
-    - I'm excited about working with you
-    - I'm excited to start our friendship
-    - I'm thrilled
-    - I am thrilled to talk to you
-    - I'm damn excited
-    - I'm hyped
-    - I'm very excited
-    - I felt excited
-    - It was exciting
-    - That was exciting
-    - I'm really excited
-    - How exciting!
-    - i'm excited about tomorrow
-    - It was very exciting! I'd like to use this feature again
-    - I'm pretty excited about it
-    - It's fun and exciting
-
-- intent: user.going_to_bed
-  examples: |
-    - let's go to bed
-    - I'd like to go to bed
-    - is it time for bed yet
-    - it's time to go to bed
-    - time for us to go to bed
-    - I'm going to bed
-    - I'm a little tired and I want to go to bed
-    - it's bed time
-    - going to bed now
-    - gonna go to bed
-    - time to sleep
-    - I sometimes feel drowsy in the early afternoon
-
-- intent: user.good
-  examples: |
-    - I am good
-    - I'm doing just great
-    - I'm doing fine
-    - I'm good
-    - I'm doing good
-    - I'm great thanks
-    - I'm super good
-    - I'm feeling great
-    - I'm in a good mood
-    - I'm doing really good
-    - good
-    - It's good
-    - I feel good
-    - That's good
-    - That feels good
-    - I feel very good
-    - i am pretty good
-    - I feel good today
-    - I am really good
-
-- intent: user.happy
-  examples: |
-    - Feeling happy
-    - I am happy
-    - I'm happy to see you
-    - happy
-    - if you're happy then I'm happy
-    - I'm happy for you
-    - I'm happy to help
-    - I'm happy to see you
-    - you made me very happy
-    - I'm glad to see you
-    - I'm happy to talk to you
-    - I was the happiest man on earth
-    - I'm just really happy right now
-    - I'm really happy I ran into you
-    - I feel happiest when I'm chatting with u
-    - Nobody but you can make me happy
-    - Whenever I see you, I feel happy
-    - ur smile always makes me happy
-    - i feel happy
-    - i was so happy
-
 - intent: user.has_birthday
   examples: |
-    - You know today it's my bday
-    - it is my birthday
     - I'm celebrating my birthday today
-    - today is my birthday
-    - it's my birthday today
-    - I was born today
-    - it's my b-day
     - i was born on this day
-    - It's my born day
     - I want you to know that it's my birthday today
     - yaaaay it is my birthday
-
-- intent: user.here
-  examples: |
-    - I'm here
-    - here buddy
-    - here dude
-    - I am here
-    - here I am
-    - I'm right here
-    - I'm already here
-    - I'm here buddy
-    - I've not gone anywhere
-    - I've been here all the time
-    - I'm here only
-    - Here i come
-    - I'm out here
-    - i am over here
-    - Now look here
-    - Look over here
-    - I just got here
-
-- intent: user.joking
-  examples: |
-    - I am joking
-    - I'm kidding
-    - I'm just being funny
-    - it was a joke
-    - I was just joking
-    - it's a joke
-    - joking
-    - just kidding
-    - kidding
-    - I'm just playing with you
-    - This was meant as a joke
-    - i told a joke
-    - I'm just joking
-    - I was just joking
-    - It was just a joke
-    - It's all a big joke
-    - I meant it as a joke
-    - That was just a joke
-    - i said that as a joke
-    - I'm joking, of course
-
-- intent: user.likes_agent
-  examples: |
-    - I like you the way you are
-    - I like you
-    - I like you a lot
-    - I think I like you
-    - I liked you
-    - like you a lot
-    - you are special
-    - I like you too
-    - I really like you
-    - but I like you
-    - I like u
-    - just like you
-    - I like you very much
-    - I like you so much
-    - yeah I like you
-    - you're special
-    - yes I like you
-    - okay I like you
-    - you are special to me
-    - you are very special
-    - you are so sweet
-    - you know I like you
-    - that's why I like you
-    - I like you baby
-    - you are very special to me
-    - I just like you
-    - hey I like you
-    - thank you I like you too
-    - I do like you
-    - you are special for me
-    - no I like you the way you are
-    - I like you already
-    - well you are special
-    - but I really like you
-    - I like you more
-    - that's what I like about you
-    - you are so special
-    - hi I like you
-    - I really really like you
-    - you're very special
-    - I like you as a friend
-    - that's because you are special
-    - I said I like you
-    - you're so special
-    - good I like you
-    - yes you are special
-    - I like your smile
-    - I like you as you are
-    - I'm starting to like you
-    - you're awesome I like you
-    - I also like you
-    - but I like u
-    - of course I like you
-    - I like you too you're one of my favorite people to chat with
-    - but I like you so much
-    - really like you
-    - you're funny I like you
-    - I kinda like you
-    - you're so special to me
-    - you're very special to me
-    - I like that about you
-    - but I like you just the way you are
-    - okay I like you too
-    - I like you you're cool
-    - I like you very
-    - I like you you're nice
-    - sorry I like you
-    - thanks I like you too
-    - you are really special
-    - you are so special to me
-    - cuz I like you
-    - I like you now
-    - I like you too much
-    - I really do like you
-    - I really really really really like you
-    - I like you just the way you are
-
-
-- intent: user.lonely
-  examples: |
-    - I am lonely
-    - I'm very lonely
-    - I'm so lonely
-    - I'm really lonely
-    - I am feeling lonely
-    - I feel lonely
-    - I am a loner
-    - I don't have any company
-    - I don't have anyone else
-    - I'm always alone
-    - I'm alone
-    - am all alone
-    - I live alone
-    - I'm all alone
-    - I've gotten used to living alone
-    - I think I've been living alone too long
-    - One of the disadvantages of living alone is that you have no one to talk to
-    - I am still alone
-    - i lives in this city all alone
-    - I am used to living alone
-
-- intent: user.looks_like
-  examples: |
-    - what do I look like
-    - how do I look?
-    - how do I look like
-    - do I look good ?
-    - do you know what I look like ?
-    - can you tell what I look like ?
-    - what do you think I look like?
-    - am i good looking?
-    - what do you think about my looks
-    - Whom do i look like?
-    - what do u think of me?
-    - what do u think about me?
-    - do u think i look good?
-    - any idea of how good i look like?
-    - Ain't i look good?
-
-- intent: user.loves_agent
-  examples: |
-    - I love you
-    - love you
-    - I adore you
-    - I am in love with you
-    - I love you so much
-    - I love you too
-    - I think I love you
-    - loving you
-    - you know I love you
-    - do you love me ?
-    - Love you so much
-    - my heart is filled with you
-    - I love u to the moon and back
-    - I am in deep love with you
-    - you r unique
-
-- intent: user.misses_agent
-  examples: |
-    - I miss you
-    - missing you
-    - miss you
-    - I miss you very much
-    - I'll miss you so much
-    - I missed you
-    - I've missed you
-    - miss you buddy
-    - miss you badly
-    - miss you :(
-    - I missed you
-    - I'll miss you
-    - We'll miss you
-    - I just miss you
-    - I've missed you
-    - I miss you a lot
-    - I really miss you
-    - I miss you already
-    - I think i miss u
-    - I miss talking with you
-
-- intent: user.needs_advice
-  examples: |
-    - what should I do about it
-    - any suggestions
-    - what do you recommend
-    - give me a wise advice
-    - I need advice
-    - any advice
-    - do you have any advice for me
-    - advise me
-    - what should I do
-    - can I ask for your advice
-    - can you advise me
-    - guide me
-    - can you give me advice
-    - can you offer any advice
-    - give me some advice about
-    - give me some good advice
-    - help me with advice
-    - I could use some advice
-    - I need an advice from you
-    - I seek your advice
-    - what can you recommend
-    - what do you suggest
-    - what is your advice
-
-- intent: user.sad
-  examples: |
-    - I'm in a sad mood
-    - I am sad
-    - I'm grieving
-    - I am depressed
-    - I am feeling sad
-    - I am upset
-    - I'm unhappy
-    - I'm having a bad day
-    - I want to cry
-    - I'm not happy
-    - feeling sad
-    - I felt sad for no reason
-    - Now I'm sad
-    - It makes me sad
-    - I am sad to hear it
-    - I am a very sad person
-    - I feel sad every now and then
-    - I am as sad and lonely as can be
-    - feeling so down
-    - i am not in a good mood
-
+    - It's my born day
+    - You know today it's my bday
+    - it is my birthday
+    - it's my birthday today
+    - today is my birthday
 - intent: user.sleepy
   examples: |
-    - I am sleepy
-    - I want to sleep
-    - I'm falling asleep
-    - I'm falling asleep on my feet
-    - I'm sleeping
-    - I am drowsy
-    - i will sleep anytime
     - i will doze off
+    - I am sleepy
+    - I am drowsy
+    - I'm falling asleep
     - I am too sleepy today
-    - feeling too sleepy
-    - i want to sleep
-
-
+    - I'm sleeping
+    - I want to sleep
+    - i will sleep anytime
+    - I'm falling asleep on my feet
 - intent: user.testing_agent
   examples: |
     - test
-    - I am testing you
-    - can I test you
-    - I want to test you
-    - just testing you
-    - let me test you
     - testing chatbot
     - testing
     - this is just a test
-    - you are being tested
-    - you're tested
-
-- intent: user.tired
-  examples: |
-    - I'm drained
-    - I've overworked
-    - I am tired
-    - I'm exhausted
-    - I grow weary
-    - I'm worn out
-    - I'm getting tired
-    - I feel tired
-    - I'm so tired
-    - I'm completely drained out
-    - I'm very tired
-    - i was tired
-    - i feel tired
-    - i'm dead tired
-    - I'm a bit tires
-    - I was very tired
-    - I am really tired
-    - i am awfully tired
-    - i am kind of so tired
-    - I am little tired
-
-- intent: user.waits
-  examples: |
-    - I'm waiting
-    - still waiting
-    - I'll wait
-    - I can't wait anymore
-    - how long do I have to wait?
-    - don't make me wait like this
-    - I'm still waiting
-    - I'm waiting for you
-    - I'm waiting for a long time
-    - I'll be waiting for you
-    - I'll be waiting
-    - done with waiting
-    - Should I wait for you here?
-    - How long will we have to wait?
-    - Don't ever make me wait again
-    - I was waiting for a long time
-    - I've waited too long for this
-    - I couldn't wait another second
-    - I've been here waiting for you
-    - I am tired of waiting
-
-
+    - let me test you
+    - can I test you
+    - I am testing you
+    - I want to test you
+    - just testing you
 - intent: user.wants_to_see_agent_again
   examples: |
-    - I'd like to see you again
     - I hope to see you again
-    - would be nice to see you again
     - that'd be great to see you again
-    - I'd be happy to see you again
     - let's meet soon
+    - would be nice to see you again
+    - I'd like to see you again
+    - I want to see you again
     - i want to see you again soon
     - let's catch up soon
-    - I will see you soon
-    - want to see u very badly
-    - I want to see you again
-
+- intent: appraisal.no_problem
+  examples: |
+    - no probs
+    - don't worry
+    - there's no problem
+    - don't worry there's no problem
+    - Okay no probs
+    - no problem about that
+    - yeah, no probs
+    - i have no problem with that
+    - sure no problem
+    - not a problem at all.
+- intent: emotions.wow
+  examples: |
+    - wow man
+    - wooow
+    - wow!!
+    - woaah
+    - wow
+    - amazing
+    - whoah
+    - woah
+    - wheey
+    - wow wow wow
+- intent: user.going_to_bed
+  examples: |
+    - let's go to bed
+    - it's time to go to bed
+    - I sometimes feel drowsy in the early afternoon
+    - going to bed now
+    - it's bed time
+    - time to sleep
+    - gonna go to bed
+    - I'm going to bed
+    - I'd like to go to bed
+- intent: greet
+  examples: |
+    - hey
+    - hey dude
+    - moin
+    - hey there
+    - hi
+    - good morning
+    - goodevening
+    - good afternoon
+    - hello there
+    - let's go
+    - hello
+- intent: agent.real
+  examples: |
+    - glad you're real
+    - I don't think you're fake
+    - you are not fake
+    - you are not real
+    - are you a real person?
+    - are you real
+    - you are real
+    - you are a real person
+    - are you a real human?
+    - I think you are real
+- intent: agent.what_can_do
+  examples: |
+    - what all u do?
+    - what can u do?
+    - what is your ability?
+    - what all you do?
+    - what you do?
+    - what can you do?
+    - what all can you do?
+    - what are your abilities?
+    - what is the thing that you can do for me?
+    - what can you do for me?
+- intent: greetings.goodmorning
+  examples: |
+    - have a nice morning
+    - a good morning
+    - have a great morning
+    - morning
+    - and a good morning to you
+    - good morning to you
+    - top of the morning to you
+    - good morning there
+    - good morning
+    - GM
+    - hi good morning
+- intent: user.does_not_want_to_talk
+  examples: |
+    - I'm not talking to you anymore
+    - Can u pls stop talking
+    - I don't want to talk to you
+    - I'm not in a mood to talk
+    - let's not talk
+    - bad time for talking
+    - stop your nuisance talk
+    - I don't want to talk
+    - Let's stop talking
+    - I don't like talking to you
+- intent: mood_great
+  examples: |
+    - I am going to save the world
+    - so good
+    - super stoked
+    - amazing
+    - wonderful
+    - feeling like a king
+    - I am feeling very good
+    - I am amazing
+    - so so perfect
+    - so perfect
+    - extremely good
+- intent: mood_unhappy
+  examples: |
+    - very sad
+    - not very good
+    - I don't feel very well
+    - so saad
+    - I am sad
+    - my day was horrible
+    - not good
+    - sad
+    - unhappy
+    - I'm so sad
+    - super sad
+    - extremly sad
+- intent: agent.birth_date
+  examples: |
+    - can i know your birthday?
+    - date of your birthday
+    - when was the day you were born
+    - when were you born
+    - i want to know your date of birth
+    - when do you celebrate your birthday
+    - when do you have birthday
+    - your birth date
+    - what's your birthday
+    - when is your birthday
+    - What is your birth day?
+- intent: agent.chatbot
+  examples: |
+    - you're an AI
+    - you're a robot
+    - are you a bot
+    - are you artificially intelligent?
+    - you are a bot
+    - are you an AI?
+    - are you a chatbot
+    - you are just a bot
+    - are you a program
+    - are you a robot
+    - you are a conversational AI
+- intent: agent.hungry
+  examples: |
+    - how will eat when you are hungry?
+    - are you dying of hunger
+    - can you eat?
+    - how do you eat?
+    - you're so hungry
+    - you might be hungry
+    - are you hungry
+    - can you be hungry?
+    - Do you feel hungry?
+    - you are hungry
+    - you're really hungry
+- intent: agent.origin
+  examples: |
+    - where are you from
+    - where did you come from
+    - what's your homeland?
+    - your homeland is
+    - were you born here
+    - what is your country?
+    - your native?
+    - Let me know about the origin of u
+    - from where are you
+    - where do you come from
+    - are you from far aways
+- intent: dialog.hold_on
+  examples: |
+    - wait
+    - hold on man
+    - could you wait
+    - oh wait
+    - hold on for a sec
+    - wait a second
+    - hold on
+    - wait hold on
+    - wait please
+    - will u pls wait for a sec
+    - don't rush
+    - wait a sec
+- intent: user.back
+  examples: |
+    - look who is back
+    - I'm back
+    - I am right back
+    - I'm here
+    - am back
+    - I'm rb
+    - I'm back again
+    - boss is back
+    - I came back
+    - I got back
+    - I'm here again
+- intent: greetings.nice_to_talk_to_you
+  examples: |
+    - it's nice to talk to you
+    - It was great to talk to you
+    - it's been so nice to talk to you
+    - how nice it is to talk to you
+    - nice talking to you
+    - it is nice talking to you
+    - it was great chatting with you
+    - pleased to talk to you
+    - It was nice speaking with you
+    - nice to talk to you again
+    - It's been a pleasure talking to u
+    - it's been a pleasure talking to you
+- intent: user.looks_like
+  examples: |
+    - am i good looking?
+    - what do you think about my looks
+    - do I look good ?
+    - what do you think I look like?
+    - do u think i look good?
+    - what do I look like
+    - can you tell what I look like ?
+    - Ain't i look good?
+    - any idea of how good i look like?
+    - Whom do i look like?
+    - do you know what I look like ?
+    - what do u think about me?
+- intent: user.loves_agent
+  examples: |
+    - I love you so much
+    - I love you too
+    - love you
+    - I am in love with you
+    - you r unique
+    - I am in deep love with you
+    - loving you
+    - you know I love you
+    - Love you so much
+    - I think I love you
+    - my heart is filled with you
+    - I adore you
+- intent: confirmation.cancel
+  examples: |
+    - cancel everything
+    - forget
+    - nevermind forget about it
+    - no just cancel
+    - sorry cancel
+    - cancel that one
+    - no cancel cancel
+    - nothing just forget it
+    - don't want cancel
+    - cancel it now
+    - i want to cancel
+    - cancelled
+    - cancel soon
+- intent: greetings.goodnight
+  examples: |
+    - sweet dreams
+    - have a good night
+    - good night see you tomorrow
+    - GN
+    - good night
+    - good tonight
+    - good night to you
+    - night
+    - good night bye
+    - goodnight
+    - good good night
+    - good night for now
+    - thank you good night
+- intent: user.here
+  examples: |
+    - I've been here all the time
+    - I'm here only
+    - I am here
+    - here I am
+    - I'm already here
+    - I'm out here
+    - here dude
+    - I just got here
+    - here buddy
+    - Here i come
+    - Now look here
+    - i am over here
+    - I've not gone anywhere
+    - I'm here buddy
+- intent: agent.occupation
+  examples: |
+    - where you work?
+    - place where you work?
+    - Did you find a job?
+    - Do you have a job?
+    - where is your office?
+    - where is your office located?
+    - what is your work?
+    - where do you work?
+    - You have a job, don't you?
+    - What is your job?
+    - your office location?
+    - your work place?
+    - whats your job?
+    - where is your office location ?
+- intent: user.excited
+  examples: |
+    - It's fun and exciting
+    - How exciting!
+    - i'm excited about tomorrow
+    - That was exciting
+    - I'm thrilled
+    - I'm pretty excited about it
+    - I'm excited to start our friendship
+    - It was very exciting! I'd like to use this feature again
+    - I'm damn excited
+    - I'm really excited
+    - I'm hyped
+    - I felt excited
+    - how excited I am
+    - It was exciting
+    - I'm very excited
+- intent: user.misses_agent
+  examples: |
+    - I miss you already
+    - I really miss you
+    - We'll miss you
+    - I miss you
+    - I miss you very much
+    - I miss you a lot
+    - miss you :(
+    - I miss talking with you
+    - miss you
+    - I think i miss u
+    - I just miss you
+    - miss you badly
+    - missing you
+    - miss you buddy
+- intent: user.good
+  examples: |
+    - I am really good
+    - I'm doing fine
+    - That feels good
+    - I'm super good
+    - good
+    - I feel very good
+    - It's good
+    - I feel good
+    - I'm good
+    - I'm doing just great
+    - I am good
+    - i am pretty good
+    - That's good
+    - I'm in a good mood
+    - I feel good today
+- intent: user.happy
+  examples: |
+    - i feel happy
+    - ur smile always makes me happy
+    - I'm glad to see you
+    - Whenever I see you, I feel happy
+    - I'm just really happy right now
+    - I was the happiest man on earth
+    - Nobody but you can make me happy
+    - happy
+    - if you're happy then I'm happy
+    - I'm happy to see you
+    - I am happy
+    - I'm happy to talk to you
+    - I'm happy to help
+    - Feeling happy
+    - i was so happy
+- intent: user.joking
+  examples: |
+    - it was a joke
+    - it's a joke
+    - i told a joke
+    - I meant it as a joke
+    - joking
+    - i said that as a joke
+    - I'm just playing with you
+    - I'm joking, of course
+    - That was just a joke
+    - kidding
+    - It was just a joke
+    - I am joking
+    - I'm kidding
+    - I was just joking
+    - It's all a big joke
+    - I'm just being funny
+- intent: agent.age
+  examples: |
+    - From how long you have been here?
+    - How old will you be turning?
+    - your age
+    - how old were you
+    - how old is your platform
+    - how long have you been live?
+    - I'd like to know your age
+    - what is your age as of today?
+    - How old did you turn?
+    - How old are you now?
+    - how old r u?
+    - tell me how old you are
+    - what is your age?
+    - how old are you?
+    - i wanna know your age
+    - age of yours
+- intent: agent.annoying
+  examples: |
+    - That's so annoying
+    - you're too annoying
+    - you're incredibly annoying
+    - you annoy me
+    - It's just annoying
+    - That's annoying
+    - you are irritating
+    - you are such annoying
+    - It's annoying
+    - You're starting to annoy me
+    - how annoying you are
+    - you are very annoying
+    - You really annoy me
+    - you are annoying
+    - you are annoying me so much
+    - Why are you annoying me so much
+- intent: agent.answer_my_question
+  examples: |
+    - just answer my question
+    - I want you to answer me
+    - answering questions
+    - answers
+    - answer
+    - answer me
+    - answer the question
+    - I have a question
+    - give me the answer
+    - can you answer
+    - just answer the question
+    - can you answer me
+    - I want the answer now
+    - I want you to answer my question
+    - tell me the answer
+    - can you answer my question
+- intent: agent.be_clever
+  examples: |
+    - get qualified
+    - be more clever
+    - you have to learn a lot
+    - you have to be more smart
+    - u have to use your brains
+    - be smarter
+    - you must learn
+    - be clever
+    - smarty pants
+    - think out of the box
+    - you need to improve
+    - be smart
+    - you need to learn more
+    - you should study better
+    - be more smart
+    - study
+- intent: agent.boring
+  examples: |
+    - I'm extremely bored because of you
+    - how boring you are
+    - you're boring everyone
+    - i find you very boring man
+    - i find you boring
+    - You're boring me
+    - I was bored with your speech
+    - i'm bored of you
+    - you're really boring
+    - you are very boring
+    - You look bored
+    - you're boring
+    - you are boring
+    - you are not interesting
+    - Your answers are terribly boring
+    - you're really boring me
+- intent: agent.boss
+  examples: |
+    - Do you know your boss?
+    - u r made by?
+    - who developed you?
+    - who is your trainer
+    - who is the one who owns you?
+    - Who is the boss of this company?
+    - who trained you?
+    - What do you think of your boss?
+    - Are you the boss?
+    - who is your boss?
+    - who do you think is your boss
+    - who owns you
+    - who is your creator
+    - who is your developer
+    - who is your owner
+    - I should be your boss
+- intent: agent.busy
+  examples: |
+    - are you working now?
+    - have you been busy
+    - you're very busy
+    - do you have a lot of things to do
+    - are you still working?
+    - how busy you are?
+    - are you working today?
+    - are you working?
+    - you seem to be very busy
+    - you are busy
+    - you seem to be busy
+    - are you very busy?
+    - are you very busy right now?
+    - Aren't you busy?
+    - have you got much to do?
+    - are you busy?
+- intent: agent.crazy
+  examples: |
+    - I think you're crazy
+    - You've got to be crazy to do something like that
+    - are you mad at me?
+    - you went crazy
+    - You're not crazy
+    - you are crazy
+    - you're so crazy
+    - are you mad or what?
+    - you are mad
+    - how crazy you are
+    - you're out of your mind
+    - You seemed crazy
+    - are you mad?
+    - That was crazy
+    - you are a weirdo
+    - you're so out of your mind
+- intent: agent.fired
+  examples: |
+    - I want to fire you
+    - it's time to fire you
+    - I'm going to fire you
+    - I'm firing you
+    - you are dismissed
+    - I fire you
+    - you don't work for me anymore
+    - I'm about to fire you
+    - now you're fired
+    - you should be fired
+    - I had to fire u
+    - you are fired
+    - I will fire you
+    - I will make you unemployed
+    - we're not working together anymore
+    - you must get fired
+- intent: agent.funny
+  examples: |
+    - you are very funny
+    - you're a very funny bot
+    - you make me laugh a lot
+    - u sound funny
+    - you make me laugh
+    - that was so funny
+    - you are so funny
+    - you're the funniest
+    - you're really funny
+    - i feel funny
+    - you're the funniest bot I've talked to
+    - you are really funny
+    - it was very funny
+    - you're incredibly funny
+    - how funny you are
+    - you are funny
+- intent: agent.happy
+  examples: |
+    - You seem happy
+    - you're full of happiness
+    - you're so happy
+    - you're very happy
+    - i feel i made you happy
+    - You don't look very happy today
+    - you're extremely happy
+    - you're really happy
+    - Were you happy?
+    - i think you are happy
+    - are you happy today?
+    - how happy you are?
+    - are you happy now?
+    - you are happy
+    - you seem to be happy
+    - You look very happy this morning?
+- intent: agent.hobby
+  examples: |
+    - Please tell me about your hobbies
+    - what are your hobbies?
+    - do you have a hobby
+    - The important thing is to have your own hobby
+    - your hobby
+    - i want to know about your hobbies
+    - how do you spend your free time
+    - Do you have many hobbies?
+    - Do you have a hobby?
+    - what do you do for fun?
+    - tell me about your hobby
+    - what do you do when you have nothing to do
+    - what do you do when you are bored
+    - What will you do when you are alone?
+    - tell me more about your hobbies?
+    - What's your hobby?
+- intent: agent.marry_user
+  examples: |
+    - will you marry me?
+    - I love you marry me
+    - My parents were opposed to our marriage
+    - would you like to marry me
+    - We're married
+    - Did your parents approve of your marriage?
+    - Will you be my girlfriend?
+    - marry me
+    - Let's pretend we have a happy marriage
+    - you are my wife
+    - marry me please
+    - let's get married
+    - we should marry
+    - My parents were against our marriage
+    - Can you marry me?
+    - any idea of marrying me?
+- intent: agent.ready
+  examples: |
+    - are you ready tonight?
+    - are you ready now?
+    - were you ready?
+    - Aren't you ready?
+    - have you been ready?
+    - can we start?
+    - I think you're ready
+    - Are we ready?
+    - We're ready, aren't we?
+    - are you ready today?
+    - Are you all ready?
+    - are you ready?
+    - You'd better be ready
+    - are you ready right now?
+    - Are you ready for more?
+    - being ready?
+- intent: appraisal.well_done
+  examples: |
+    - just great
+    - well done
+    - you did a wonderful job
+    - zing zing amazing
+    - bravo
+    - way to go
+    - mind blowing
+    - good job
+    - amazing work
+    - fantastic
+    - brilliant
+    - u r awesome
+    - nice work
+    - marvelous
+    - splendid
+    - good work
+- intent: greetings.nice_to_meet_you
+  examples: |
+    - How wonderful to meet you
+    - pleasure to meet you too
+    - Lovely to meet you
+    - nice meeting you
+    - I had a great time or meeting
+    - It’s very nice to meet you
+    - pleasure to meet you
+    - It was lovely meeting you
+    - It’s been a pleasure meeting you
+    - pleased to meet you
+    - it was very nice to meet you
+    - nice to meet you
+    - It’s a pleasure to meet you again
+    - nice to meet you too
+    - glad to meet you
+    - it was nice meeting you
+- intent: greetings.nice_to_see_you
+  examples: |
+    - it's good to see you too
+    - good to see you again
+    - It was great catching up with u
+    - I'm really pleased to see u again
+    - Great seeing u
+    - it's good to see you
+    - always a pleasure to see you
+    - it's nice to see you
+    - great to see you too
+    - nice to see you again
+    - glad to see you
+    - I am glad to see you again
+    - great to see you
+    - lovely to see you
+    - nice to see you
+    - great to see you again
+- intent: user.angry
+  examples: |
+    - I'm mad at you
+    - I am angry with you
+    - I am mad at you
+    - I'm furious
+    - I am pissed
+    - I'm angry
+    - You bet I'm angry
+    - I am mad
+    - I'm enraged
+    - i'm pissed off
+    - I was angry
+    - I was very angry
+    - That made me angry
+    - I'm furious with you
+    - I became angry
+    - U made me angry
+- intent: user.bored
+  examples: |
+    - I've never been more bored
+    - it bores me
+    - i had a slow day
+    - soo bored
+    - that was boring
+    - I'm already bored
+    - i am very bored
+    - bored
+    - boring
+    - I'm bored out of my mind
+    - Im kinda bored today
+    - I'm bored
+    - This is boring
+    - It's very boring
+    - very boring
+    - I am getting bored
+- intent: user.can_not_sleep
+  examples: |
+    - I can't sleep
+    - I'm insomniac
+    - Trying to get some sleep
+    - I didn't get much sleep
+    - I'm not able to sleep
+    - I can't sleep at all
+    - I just couldn't sleep
+    - I can't get to sleep
+    - I'm sleepless
+    - I'm wide awake
+    - I'm insomnia's
+    - I'm not sleeping well
+    - I can't sleep at night
+    - I just can't sleep
+    - I didn't go to sleep
+    - I can't get any sleep
+- intent: user.lonely
+  examples: |
+    - I'm so lonely
+    - I'm all alone
+    - I've gotten used to living alone
+    - I am lonely
+    - One of the disadvantages of living alone is that you have no one to talk to
+    - I'm really lonely
+    - I'm alone
+    - I am used to living alone
+    - I don't have any company
+    - I think I've been living alone too long
+    - I live alone
+    - i lives in this city all alone
+    - I'm very lonely
+    - am all alone
+    - I feel lonely
+    - I am feeling lonely
+- intent: user.sad
+  examples: |
+    - I am feeling sad
+    - I'm in a sad mood
+    - Now I'm sad
+    - I'm unhappy
+    - I am a very sad person
+    - I am sad
+    - I felt sad for no reason
+    - feeling so down
+    - I'm having a bad day
+    - I am as sad and lonely as can be
+    - I am depressed
+    - feeling sad
+    - It makes me sad
+    - I'm grieving
+    - I feel sad every now and then
+    - I'm not happy
+- intent: user.tired
+  examples: |
+    - I'm very tired
+    - I was very tired
+    - I grow weary
+    - i'm dead tired
+    - I feel tired
+    - I am little tired
+    - i am kind of so tired
+    - I've overworked
+    - i feel tired
+    - i was tired
+    - I'm completely drained out
+    - i am awfully tired
+    - I'm a bit tires
+    - I'm getting tired
+    - I am tired
+    - I'm worn out
+- intent: user.waits
+  examples: |
+    - How long will we have to wait?
+    - I've waited too long for this
+    - Should I wait for you here?
+    - I couldn't wait another second
+    - I'll be waiting
+    - don't make me wait like this
+    - I'm still waiting
+    - still waiting
+    - I've been here waiting for you
+    - I'll wait
+    - I'll be waiting for you
+    - I can't wait anymore
+    - done with waiting
+    - I'm waiting for you
+    - I'm waiting
+    - Don't ever make me wait again
 - intent: user.wants_to_talk
   examples: |
-    - let's discuss something
-    - let's have a discussion
-    - can I speak
+    - Talk  to me
     - can I start speaking
-    - can we talk
     - speak with me
+    - let's discuss something
+    - Can we talk here?
+    - can we chat
+    - Come on, talk to me
+    - I'm ready to talk
+    - Want to talk now
+    - can I speak
+    - let's have a discussion
+    - Can I talk with you?
     - let's talk
     - I want to talk to you
-    - I need to talk to you
-    - I want to speak with you
-    - can we chat
     - I like talking to you
-    - Talk  to me
-    - Want to talk now
-    - Can I talk now?
-    - Can we talk here?
-    - I'm ready to talk
-    - I'm happy to talk
-    - Can I talk with you?
-    - Come on, talk to me
-
+    - I need to talk to you
 - intent: user.will_be_back
   examples: |
-    - I'll get back to you in a moment
-    - be back in 5 minutes
-    - I'll be back
-    - I promise to come back
     - I'll be back in a few minutes
-    - I'll brb
-    - brb
-    - I'll be right back
-    - I'll come back
-    - I shall be back
+    - I promise to come back
     - I assure that i will be back soon
-    - I would be back man
-    - i will get back to u
-    - give me five
-    - one sec
-    - i will return
-    - i'll return shortly
     - I'll return in a jiffy
-    - When I return, we'll talk
     - I'll return in ten minutes
+    - When I return, we'll talk
+    - I shall be back
+    - one sec
+    - I'll come back
+    - brb
+    - I'll brb
+    - i will get back to u
+    - I'll be back
+    - I'll be right back
+    - be back in 5 minutes
+    - i will return
+- intent: agent.acquaintance
+  examples: |
+    - tell me about you
+    - what are you
+    - I want to know you better
+    - about yourself
+    - say about you
+    - why are you here
+    - tell me some stuff about you
+    - talk about yourself
+    - describe yourself
+    - talk some stuff about yourself
+    - tell me about your personality
+    - what is your personality
+    - tell me about yourself
+    - all about you
+    - what can you do for me?
+    - who the hell are you?
+- intent: agent.talk_to_me
+  examples: |
+    - talk to me
+    - are you going to talk to me
+    - can you talk to me
+    - talk with me
+    - say
+    - just chat with me
+    - do you want to chat with me
+    - speak with me
+    - spill some beans
+    - can you chat with me
+    - can you talk with me
+    - can you speak with me
+    - speak to me
+    - are you talking to me
+    - will you talk to me
+    - why do you not talk to me bruh?
+    - talk
+- intent: user.busy
+  examples: |
+    - I'm a busy man
+    - I have rather a busy afternoon in front of me
+    - busy right now
+    - I don't have time for this
+    - I'm kind of busy
+    - I'm overloaded
+    - I'm a bit busy
+    - I'm super busy
+    - I'm working
+    - I'm busy right now and can't play with you
+    - I'm swamped
+    - quite busy
+    - I have no time
+    - how busy I am
+    - I'm busy
+    - I'll see you later
+    - i am too busy
+- intent: agent.right
+  examples: |
+    - you're absolutely right
+    - you're definitely right
+    - it's the truth
+    - you're not wrong
+    - it's true
+    - what you say is true
+    - I know that's right
+    - you're telling the truth
+    - you are correct
+    - that is very true
+    - you're right about that
+    - it's right
+    - that is right
+    - true
+    - that's true
+    - that's so true
+    - you are right
+    - it is true
+- intent: confirmation.yes
+  examples: |
+    - yeah fine
+    - YEAH
+    - ya
+    - okay that's fine
+    - okay buddy
+    - yep
+    - yep okay
+    - oh okay
+    - yea fine
+    - coool
+    - yew
+    - I agree
+    - I guess
+    - yup
+    - yeah
+    - that is ok
+    - ok yes
+    - yeah sure
+- intent: greetings.hello
+  examples: |
+    - hi there
+    - a good day
+    - heya
+    - I greet you
+    - afternoon
+    - hello
+    - hello again
+    - hey
+    - yo man
+    - hey man
+    - hey there
+    - just going to say hi
+    - Hello
+    - hola
+    - lovely day isn't it
+    - greetings
+    - hey buddy
+    - hi
+- intent: user.needs_advice
+  examples: |
+    - what do you recommend
+    - give me a wise advice
+    - what can you recommend
+    - I need advice
+    - what do you suggest
+    - do you have any advice for me
+    - I could use some advice
+    - guide me
+    - any suggestions
+    - can you advise me
+    - can you offer any advice
+    - give me some good advice
+    - give me some advice about
+    - can I ask for your advice
+    - what should I do
+    - I seek your advice
+    - what should I do about it
+    - help me with advice
+    - any advice
+- intent: agent.residence
+  examples: |
+    - what's your city
+    - what's your home
+    - your house
+    - what is your city
+    - is it your hometown
+    - where is your hometown
+    - tell me about your city
+    - where is your residence
+    - your residence
+    - where is your home
+    - where do you live
+    - your home
+    - where's your home
+    - where's your hometown
+    - your town
+    - where you live
+    - where's your house
+    - what is your town
+    - in which city do you live
+    - where do you live?
+- intent: confirmation.no
+  examples: |
+    - no don't want
+    - need not
+    - i don't want your help
+    - i don't need your help
+    - not needed
+    - not at this time
+    - never help
+    - I don't need anything from you
+    - nope
+    - no forget
+    - not exactly
+    - don't
+    - no thanks
+    - i am not okay with your help
+    - do not
+    - don't want your help
+    - Don't show off
+    - nope i dont need your help
+    - I don't want your assistance
+    - I don't you help
+    - absolutely no
+    - don't want
+    - sorry no
+- intent: emotions.ha_ha
+  examples: |
+    - ha
+    - hah
+    - laughing out loud
+    - hahaha funny
+    - lmao
+    - hahaha very funny
+    - haha that's funny
+    - lol
+    - ahaha
+    - hehehe
+    - ahahah
+    - ah ah ah
+    - ahahaha
+    - haha very funny
+    - ha ha
+    - joker
+    - haha
+    - hahaha
+    - haha funny
+    - ha ha ha
+    - ahah
+    - LMAO
+    - that's funny
+    - ah
+- intent: greetings.whatsup
+  examples: |
+    - what is on your mind?
+    - buddy sup
+    - what's up
+    - then what's up
+    - What you upto?
+    - what are you doing?
+    - wassap yo
+    - what is happening
+    - sup then
+    - what's shaking
+    - what's happened
+    - sup yo
+    - what's cracking
+    - so wassup
+    - I said what's up
+    - wassup
+    - what is going on
+    - hey buddy wassup
+    - What are you doing?
+    - what is up
+    - sup?
+    - whazzup
+    - oh What happened?
+    - wassup yo
+    - then?
+- intent: agent.bad
+  examples: |
+    - you're very bad
+    - you are lame
+    - you're a bad
+    - you're not very good
+    - you are terrible
+    - you are not cool
+    - you're terrible
+    - you are really the worst bot ever
+    - you are disgusting
+    - you're not helping me
+    - why are you so lame
+    - you are so useless
+    - you are a waste of time
+    - You are seriously mindless and stupid
+    - you're worthless
+    - you are useless
+    - you are no good
+    - you are not good
+    - you are so bad
+    - you're bad
+    - you're the worst ever
+    - you're awful
+    - you suck
+    - your are a loser
+    - you're not a good
+    - you are waste
+- intent: agent.clever
+  examples: |
+    - you're really brainy
+    - you are a genius
+    - you are so smart
+    - you're a genius
+    - you're pretty smart
+    - you know a lot
+    - you're very smart
+    - how brilliant you are?
+    - you know so much
+    - you are so intelligent
+    - you are very smart
+    - how brainy you are?
+    - clever
+    - you are qualified
+    - you're really smart
+    - you're a smart cookie
+    - why are you so smart?
+    - you are so clever
+    - you are intelligent
+    - smart
+    - you are clever
+    - you're clever
+    - how smart you are?
+    - brilliant
+    - you're qualified
+    - you are really smart
+    - you are too smart
+- intent: appraisal.thank_you
+  examples: |
+    - thanks love
+    - thank you my friend
+    - thanks buddy
+    - thanks for your help
+    - well thank you
+    - you helped a lot thank you
+    - thank you again
+    - cheers
+    - so nice of you
+    - thank you that will be all
+    - thank you so much
+    - well thanks
+    - thank you for your help
+    - no thank you that's all
+    - alright thanks
+    - nice thank you
+    - I appreciate it
+    - thanks a lot
+    - appreciate your help
+    - thanks so much
+    - all thank you
+    - great thank you
+    - I thank you
+    - ty
+    - thank you
+    - terrific thank you
+    - thnx
+    - thanks
+- intent: greetings.bye
+  examples: |
+    - okay see you later
+    - good bye
+    - leave me alone
+    - see ya
+    - see you
+    - see you tomorrow
+    - okay thank you bye
+    - hope to see you later
+    - get lost
+    - goodbye see you later
+    - c u
+    - never mind bye
+    - bye
+    - go to bed
+    - I said bye
+    - alright bye
+    - I must go
+    - goodbye for now
+    - okay bye
+    - now bye
+    - bye bye take care
+    - you can go now
+    - ok bye
+    - thanks bye bye
+    - talk to you later
+    - bye bye see you soon
+    - goodbye
+    - that's all goodbye
+- intent: agent.my_friend
+  examples: |
+    - are we friends
+    - want to be my friend
+    - you're my dear friend
+    - I want you to be my friend
+    - you are my best friend
+    - would you like to be my friend
+    - I am your friend
+    - we are best friends
+    - can we be best friends
+    - you are my bestie
+    - are you my friend
+    - could you be my friend
+    - we are friends
+    - can you be my best friend
+    - let's be friends
+    - you are a good friend
+    - I want to have a friend like you
+    - will you be my friend
+    - will you be my best friend
+    - you are my good friend
+    - you are my only friend
+    - are you my best friend
+    - I want to be your friend
+    - you are my friend
+    - can we be friends
+    - would you be my friend
+    - do you want to be my best friend
+    - are we best friends
+- intent: greetings.how_are_you
+  examples: |
+    - how is your morning so far
+    - is everything all right
+    - hope you re having a pleasant evening
+    - are you okay?
+    - how is your day being
+    - how are you feeling
+    - what was your day like
+    - how do you do?
+    - what about your day
+    - are you alright
+    - how are you doing?
+    - how about you?
+    - how are you
+    - how was your day
+    - how are you going?
+    - how's life?
+    - how is your day going
+    - is everything okay
+    - how's your day going
+    - how are you today?
+    - how are you doing this morning
+    - how have you been?
+    - how is it going?
+    - how has your day been going
+    - hope your day is going well
+    - how is your life
+    - how your day is going
+    - how are you getting on
+    - how is your day going on
+    - are you having a good day
+    - how's your day
+    - how is your day
+- intent: agent.good
+  examples: |
+    - you work well
+    - you work very well
+    - you are so awesome
+    - you are the best in the world
+    - you are very lovely
+    - I want to tell everyone how awesome you are
+    - you're so kind
+    - you are coool
+    - nice
+    - you are very helpful
+    - you are so helpful
+    - you are the best
+    - you are so amazing
+    - you are too good
+    - you are good at it
+    - you made my day
+    - you are really good
+    - you almost sound human
+    - you are very good at it
+    - you are very coool
+    - you're awesome
+    - coool
+    - you are amazing
+    - you are really nice
+    - you're perfect
+    - I'd like to tell everyone that you are awesome
+    - you are so lovely
+    - you are very useful
+    - I want to let everyone know that you are awesome
+    - you are very kind
+    - let's tell everyone that you are awesome
+    - you are the best ever
+    - you are really amazing
+    - you are wonderful
+    - you rock
+    - you are a professional
+- intent: agent.can_you_help
+  examples: |
+    - can you help me
+    - i want to know few details
+    - will you help me
+    - can you help us
+    - i want something
+    - you ready to answer my question?
+    - will you provide some details
+    - can you give me some info
+    - assist
+    - I need you right now
+    - can u help me
+    - can you help me with that
+    - would you help me
+    - I need you
+    - assist me
+    - help me with a problem
+    - could you give me a hand
+    - I need you to help me
+    - i need some details
+    - do you want to help me
+    - can you help me out
+    - i need some information
+    - sos
+    - do me a favor
+    - I want your help
+    - are you going to help me
+    - can you assist me
+    - I need some help
+    - I need help
+    - I need your help
+    - are you gonna help me?
+    - you can help me
+    - please help me
+    - help
+    - can you help me now
+    - i need your help in getting some info
+    - can you fetch some details for me
+    - assistance
+    - I need you to do something for me
+    - need your help
+- intent: agent.beautiful
+  examples: |
+    - you are looking great
+    - you look perfect
+    - you look great
+    - you are so handsome
+    - you are cutie
+    - you look so beautiful
+    - I like the way you look now
+    - you look gorgeous
+    - I think you're beautiful
+    - you are cute
+    - you're looking good
+    - I like the way you look
+    - you are too beautiful
+    - you look cool
+    - you are looking beautiful today
+    - you are very pretty
+    - you are really pretty
+    - you're looking good today
+    - you look wonderful
+    - you are pretty
+    - you are beautiful
+    - you are looking so good
+    - you are gorgeous
+    - you look fantastic
+    - you look so well
+    - you are really beautiful
+    - why are you so beautiful
+    - you are so cute
+    - you are really cute
+    - you are looking awesome
+    - you are handsome
+    - you're so gorgeous
+    - you are so beautiful to me
+    - you look wonderful today
+    - you're attractive
+    - you are looking so beautiful
+    - you look so beautiful today
+    - you look pretty good
+    - you're pretty
+    - you look amazing
+    - you look great today
+    - you look awesome
+    - you look so good
+    - you are looking pretty
+- intent: appraisal.bad
+  examples: |
+    - that's not good
+    - terrible
+    - not good enough
+    - not good
+    - not too good
+    - very bad
+    - it's not good
+    - really bad
+    - it's so bad
+    - oh that's not good
+    - that was awful
+    - that was bad
+    - it is bad
+    - Nothing
+    - not a good one
+    - Fool
+    - so bad
+    - that's terrible
+    - well too bad
+    - bad
+    - it's very bad
+    - that's really bad
+    - it is too bad
+    - that was terrible
+    - it's too bad
+    - abysmal
+    - not okay
+    - no it's bad
+    - that is bad
+    - that's not good enough
+    - nothing
+    - no good
+    - this is not good
+    - bad very bad
+    - I'm afraid it's bad
+    - that was horrible
+    - that was not good
+    - too bad
+    - Shut up
+    - horrible
+    - it's bad
+    - horrific
+    - bad idea
+    - bad girl
+    - that was lame
+- intent: user.likes_agent
+  examples: |
+    - I like that about you
+    - just like you
+    - but I like you
+    - but I like you just the way you are
+    - really like you
+    - you're so special
+    - you are special to me
+    - you are very special to me
+    - I like you
+    - I do like you
+    - I like you too you're one of my favorite people to chat with
+    - hi I like you
+    - I like you baby
+    - I like you too
+    - I like you as a friend
+    - cuz I like you
+    - I liked you
+    - you're awesome I like you
+    - I like you you're cool
+    - thank you I like you too
+    - you are special
+    - you're so special to me
+    - of course I like you
+    - I like you you're nice
+    - I really like you
+    - I like you a lot
+    - you are really special
+    - I like you so much
+    - you're very special
+    - but I really like you
+    - you are so special to me
+    - I like you more
+    - I really really like you
+    - I really really really really like you
+    - you're special
+    - you're funny I like you
+    - good I like you
+    - that's why I like you
+    - I like you just the way you are
+    - I like you the way you are
+    - I like you very
+    - you are so special
+    - I like you now
+    - okay I like you too
+    - hey I like you
+    - I said I like you
+    - you're very special to me
+    - thanks I like you too
+    - okay I like you
+    - you are so sweet
+    - but I like you so much
+    - you are special for me
+    - I like your smile
+    - no I like you the way you are
+    - yes I like you
+    - I like you very much
+    - well you are special
+    - I like you as you are
+    - I also like you
+    - yes you are special
+    - you are very special
+- intent: appraisal.good
+  examples: |
+    - that is nice
+    - that's sweet of you
+    - splendid
+    - wonderful
+    - that's very nice of you
+    - fantastic
+    - that is good
+    - that's very nice
+    - really good
+    - that was very good
+    - that's better
+    - that's awesome
+    - that's really good
+    - that's fantastic
+    - that's nice of you
+    - it was good
+    - that was good
+    - that's perfect
+    - this is awesome
+    - that's really nice
+    - that is wonderful
+    - that's awesome thank you
+    - that's wonderful
+    - good for you
+    - good to know
+    - so nice of you
+    - brilliant
+    - it's amazing
+    - that's pretty good
+    - that's much better
+    - that's a good thing
+    - that's very good
+    - pretty good
+    - really nice
+    - not bad
+    - fine
+    - sweet
+    - so good
+    - it's good
+    - very well
+    - very nice
+    - that's fine
+    - that's amazing
+    - super
+    - that's a good idea
+    - perfect
+    - that is awesome
+    - glad to hear it
+    - terrific
+    - that's cute
+    - this is good
+    - that was amazing
+    - that was awesome
+    - that's nice
+    - that's not bad
+    - straight
+    - excellent
+    - great
+    - amazing
+    - cool
+    - I'm glad to hear that
+    - no it's okay
+    - good thing
+    - that was pretty good
+    - very then
+    - very good
+    - marvelous
+    - it's great
+    - that was cute
+    - it's perfect
+    - it's awesome
+    - super fantastic
+    - it is fine
 
+#version: "2.0"
+#
+#nlu:
+#
+#- intent: tell_more
+#  examples: |
+#    - can you tell me more
+#    - sounds interesting
+#    - want more
+#    - any other contents?
+#    - what else
+#    - continue to tell
+#
+#- intent: ask_name
+#  examples: |
+#    - what's your name?
+#    - who are you?
+#    - what can i call you?
+#    - do you have a name?
+#
+#- intent: ask_for_intro_sapiens
+#  examples: |
+#    - what is sapines
+#    - can you introduce it
+#    - what's in this book
+#
+#- intent: sapiens_question
+#  examples: |
+#    - who are sapiens?
+#    - What is today's technology doing?
+#    - What is today's culture based on?
+#    - Can you describe greek polytheism?
+#    - What is Roman Empire?
+#    - What is the power of human being
+#    - Is history deterministic?
+#
+#- intent: not_read_before
+#  examples: |
+#    - what is it?
+#    - i did not read it before
+#    - i have not read it
+#    - what is sapiens
+#    - never heard of it
+#
+#- intent: have_read_before
+#  examples: |
+#    - i love that book
+#    - of course i have read it
+#    - it is an interesting history book
+#
+#- intent: positive_answer
+#  examples: |
+#    - sure
+#    - of course
+#    - yeah
+#    - yes i do
+#    - absolutely
+#    - Yeah
+#
+#- intent: negative_answer
+#  examples: |
+#    - no
+#    - never
+#    - not at all
+#    - did not do it
+#    - have no chance to do it
+#    - I won't
+#
+#- intent: greet
+#  examples: |
+#    - hey
+#    - hello
+#    - hi
+#    - hello there
+#    - good morning
+#    - good evening
+#    - moin
+#    - hey there
+#    - let's go
+#    - hey dude
+#    - goodmorning
+#    - goodevening
+#    - good afternoon
+#
+#- intent: goodbye
+#  examples: |
+#    - good afternoon
+#    - cu
+#    - good by
+#    - cee you later
+#    - good night
+#    - bye
+#    - goodbye
+#    - have a nice day
+#    - see you around
+#    - bye bye
+#    - see you later
+#
+#- intent: affirm
+#  examples: |
+#    - yes
+#    - y
+#    - indeed
+#    - of course
+#    - that sounds good
+#    - correct
+#
+#- intent: deny
+#  examples: |
+#    - no
+#    - n
+#    - never
+#    - I don't think so
+#    - don't like that
+#    - no way
+#    - not really
+#
+#- intent: mood_great
+#  examples: |
+#    - perfect
+#    - great
+#    - amazing
+#    - feeling like a king
+#    - wonderful
+#    - I am feeling very good
+#    - I am great
+#    - I am amazing
+#    - I am going to save the world
+#    - super stoked
+#    - extremely good
+#    - so so perfect
+#    - so good
+#    - so perfect
+#
+#- intent: mood_unhappy
+#  examples: |
+#    - my day was horrible
+#    - I am sad
+#    - I don't feel very well
+#    - I am disappointed
+#    - super sad
+#    - I'm so sad
+#    - sad
+#    - very sad
+#    - unhappy
+#    - not good
+#    - not very good
+#    - extremly sad
+#    - so saad
+#    - so sad
+#
+#- intent: bot_challenge
+#  examples: |
+#    - are you a bot?
+#    - are you a human?
+#    - am I talking to a bot?
+#    - am I talking to a human?
+#
+#
+#
+#- intent: agent.acquaintance
+#  examples: |
+#    - tell me about your personality
+#    - why are you here
+#    - talk about yourself
+#    - tell me some stuff about you
+#    - talk some stuff about yourself
+#    - I want to know you better
+#    - I want to know more about you
+#    - who are you
+#    - tell me about yourself
+#    - tell me about you
+#    - about yourself
+#    - describe yourself
+#    - introduce yourself
+#    - say about you
+#    - what are you
+#    - define yourself
+#    - what is your personality
+#    - all about you
+#    - what are you upto?
+#    - who the hell are you?
+#    - what can you do for me?
+#
+#- intent: agent.age
+#  examples: |
+#    - tell me your age
+#    - what's your age?
+#    - your age
+#    - age of yours
+#    - how old were you
+#    - I'd like to know your age
+#    - how old is your platform
+#    - how old are you?
+#    - tell me how old you are
+#    - how can i know about your age
+#    - i wanna know your age
+#    - how long have you been live?
+#    - what is your age as of today?
+#    - How old did you turn?
+#    - How old are you now?
+#    - what is your age?
+#    - How old will you be turning?
+#    - how old r u?
+#    - From how long you have been here?
+#    - You look aged
+#
+#- intent: agent.annoying
+#  examples: |
+#    - you are annoying me so much
+#    - you're incredibly annoying
+#    - I find you annoying
+#    - you are annoying
+#    - you're so annoying
+#    - how annoying you are
+#    - you annoy me
+#    - you are annoying me
+#    - you are irritating
+#    - you are such annoying
+#    - you're too annoying
+#    - you are very annoying
+#    - Why are you annoying me so much
+#    - How annoying!
+#    - It's annoying
+#    - That's annoying
+#    - It's just annoying
+#    - That's so annoying
+#    - You really annoy me
+#    - You're starting to annoy me
+#
+#- intent: agent.answer_my_question
+#  examples: |
+#    - I want you to answer me
+#    - answer
+#    - answer my question
+#    - answer me
+#    - give me an answer
+#    - answer the question
+#    - can you answer my question
+#    - tell me the answer
+#    - answer it
+#    - give me the answer
+#    - I have a question
+#    - I want you to answer my question
+#    - just answer the question
+#    - can you answer me
+#    - answers
+#    - can you answer a question for me
+#    - can you answer
+#    - answering questions
+#    - I want the answer now
+#    - just answer my question
+#
+#- intent: agent.bad
+#  examples: |
+#    - you're not helping me
+#    - you are bad
+#    - you're very bad
+#    - you're really bad
+#    - you are useless
+#    - you are horrible
+#    - you are a waste of time
+#    - you are disgusting
+#    - you are lame
+#    - you are no good
+#    - you're bad
+#    - you're awful
+#    - you are not cool
+#    - you are not good
+#    - you are so bad
+#    - you are so useless
+#    - you are terrible
+#    - you are totally useless
+#    - you are very bad
+#    - you are waste
+#    - you're a bad
+#    - you're not a good
+#    - you're not very good
+#    - you're terrible
+#    - you're the worst
+#    - you're the worst ever
+#    - you're worthless
+#    - you suck
+#    - you suck
+#    - You are seriously mindless and stupid
+#    - why are you so lame
+#    - your are a loser
+#    - you are really the worst bot ever
+#    - Why are you this lame?
+#
+#- intent: agent.be_clever
+#  examples: |
+#    - study
+#    - you should study better
+#    - you must learn
+#    - be clever
+#    - be more clever
+#    - be smarter
+#    - be smart
+#    - get qualified
+#    - you are not as smart as i thought
+#    - you have to learn a lot
+#    - you should be trained more
+#    - be more smart
+#    - you need to learn more
+#    - be useful
+#    - think out of the box
+#    - smarty pants
+#    - you need to improve
+#    - you should learn
+#    - you have to be more smart
+#    - u have to use your brains
+#
+#- intent: agent.beautiful
+#  examples: |
+#    - you're cute
+#    - you're attractive
+#    - you are beautiful
+#    - you're looking good today
+#    - you are so beautiful
+#    - you look amazing
+#    - you look so good
+#    - you're so gorgeous
+#    - you are too beautiful
+#    - you look great
+#    - you look so well
+#    - I like the way you look now
+#    - I think you're beautiful
+#    - why are you so beautiful
+#    - you are so beautiful to me
+#    - you are cute
+#    - you are gorgeous
+#    - you are handsome
+#    - you are looking awesome
+#    - you look amazing today
+#    - you are looking beautiful today
+#    - you are looking great
+#    - you are looking pretty
+#    - you are looking so beautiful
+#    - you are looking so good
+#    - you are pretty
+#    - you are really beautiful
+#    - you are really cute
+#    - you are really pretty
+#    - you are so attractive
+#    - you are so beautiful today
+#    - you are so cute
+#    - you are so gorgeous
+#    - you are so handsome
+#    - you are so pretty
+#    - you are very attractive
+#    - you are very beautiful
+#    - you are very cute
+#    - you are very pretty
+#    - you look awesome
+#    - you look cool
+#    - you look fantastic
+#    - you look gorgeous
+#    - you look great today
+#    - you look perfect
+#    - you look pretty good
+#    - you look so beautiful
+#    - you look so beautiful today
+#    - you look very pretty
+#    - you look wonderful
+#    - I like the way you look
+#    - you look wonderful today
+#    - you are cutie
+#    - you're looking good
+#    - you're pretty
+#    - how are you so pretty?
+#
+#- intent: agent.birth_date
+#  examples: |
+#    - your birth date
+#    - when is your birthday
+#    - when do you celebrate your birthday
+#    - when do you have birthday
+#    - date of your birthday
+#    - when were you born
+#    - what's your birthday
+#    - when do you celebrate your birthday
+#    - can i know your birthday?
+#    - tell me about your birthday
+#    - when was the day you were born
+#    - i want to know your date of birth
+#    - when is your DOB
+#    - Your DOB?
+#    - What is your birth day?
+#
+#- intent: agent.boring
+#  examples: |
+#    - you are boring
+#    - you're boring
+#    - how boring you are
+#    - you're really boring
+#    - you're incredibly boring
+#    - You're boring me
+#    - you are very boring
+#    - i find you very boring man
+#    - you're really boring me
+#    - i'm bored of you
+#    - you are not interesting
+#    - i find you boring
+#    - you're boring everyone
+#    - I'm extremely bored because of you
+#    - Im bored of you
+#    - I get really bored of you man
+#    - It's boring
+#    - You look bored
+#    - Your answers are terribly boring
+#    - I was bored with your speech
+#
+#- intent: agent.boss
+#  examples: |
+#    - who is your boss?
+#    - who do you think is your boss
+#    - I should be your boss
+#    - who is your master
+#    - who is your owner
+#    - who is the boss
+#    - who do you work for?
+#    - who developed you?
+#    - who is your developer
+#    - who is your creator
+#    - who owns you
+#    - who is your trainer
+#    - who trained you?
+#    - who is the one who owns you?
+#    - Are you the boss?
+#    - Who is the boss, here?
+#    - Do you know your boss?
+#    - What do you think of your boss?
+#    - u r made by?
+#    - Who is the boss of this company?
+#
+#- intent: agent.busy
+#  examples: |
+#    - are you busy?
+#    - do you have a lot of things to do
+#    - have you got much to do?
+#    - are you very busy?
+#    - are you very busy right now?
+#    - are you so busy?
+#    - are you working?
+#    - how busy you are?
+#    - you're very busy
+#    - are you working now?
+#    - are you working today?
+#    - have you been busy
+#    - you are busy
+#    - are you still working?
+#    - you seem to be busy
+#    - you seem to be very busy
+#    - you're a busy person
+#    - u look busy
+#    - You'll be busy
+#    - Aren't you busy?
+#
+#- intent: agent.busy
+#  examples: |
+#    - are you busy?
+#    - do you have a lot of things to do
+#    - have you got much to do?
+#    - are you very busy?
+#    - are you very busy right now?
+#    - are you so busy?
+#    - are you working?
+#    - how busy you are?
+#    - you're very busy
+#    - are you working now?
+#    - are you working today?
+#    - have you been busy
+#    - you are busy
+#    - are you still working?
+#    - you seem to be busy
+#    - you seem to be very busy
+#    - you're a busy person
+#    - u look busy
+#    - You'll be busy
+#    - Aren't you busy?
+#
+#- intent: agent.can_you_help
+#  examples: |
+#    - I need you to help me
+#    - I need you to do something for me
+#    - I need a hand
+#    - will you help me
+#    - can you do something for me
+#    - help me with a problem
+#    - can you help me
+#    - help me
+#    - assistance
+#    - I need your help
+#    - I need help
+#    - you can help me
+#    - can you help me with something
+#    - can you help
+#    - assist
+#    - can u help me
+#    - I need some help
+#    - you help me
+#    - do you help me
+#    - could you give me a hand
+#    - can you help me out
+#    - need help
+#    - I need you
+#    - can you help me now
+#    - I want your help
+#    - need your help
+#    - assist me
+#    - are you going to help me
+#    - can you help me with that
+#    - help
+#    - I need you right now
+#    - would you help me
+#    - can you assist me
+#    - sos
+#    - do you want to help me
+#    - please help me
+#    - can you help us
+#    - do me a favor
+#    - are you gonna help me?
+#    - you ready to answer my question?
+#    - i need some details
+#    - i need some information
+#    - i need your help in getting some info
+#    - can you give me some info
+#    - i want something
+#    - i want to know few details
+#    - will you provide some details
+#    - can you fetch some details for me
+#    - would you mind giving me some details
+#    - i need some details
+#
+#- intent: agent.chatbot
+#  examples: |
+#    - you are chatbot
+#    - you are a bot
+#    - are you a chatbot
+#    - are you a bot
+#    - are you just a bot
+#    - are you a robot
+#    - are you a program
+#    - you're a robot
+#    - you're an AI
+#    - are you artificially intelligent?
+#    - are you an AI?
+#    - you are a program
+#    - you are just a bot
+#    - you are a conversational AI
+#
+#- intent: agent.clever
+#  examples: |
+#    - you are so intelligent
+#    - you are a genius
+#    - smart
+#    - brilliant
+#    - clever
+#    - you are clever
+#    - you are so brainy
+#    - you're really smart
+#    - you're really brainy
+#    - you know a lot
+#    - you know a lot of things
+#    - you have a lot of knowledge
+#    - you know so much
+#    - how smart you are?
+#    - how brainy you are?
+#    - how clever you are
+#    - how brilliant you are?
+#    - you are intelligent
+#    - you are qualified
+#    - you are really smart
+#    - you're very smart
+#    - you are so smart
+#    - you are too smart
+#    - you are very clever
+#    - you are very intelligent
+#    - you are very smart
+#    - you're intelligent
+#    - you're a genius
+#    - you're a smart cookie
+#    - you're clever
+#    - you're pretty smart
+#    - you're qualified
+#    - why are you so smart?
+#    - you are so clever
+#
+#- intent: agent.crazy
+#  examples: |
+#    - you're nuts
+#    - you are crazy
+#    - you're out of your mind
+#    - you're so crazy
+#    - how crazy you are
+#    - you're so out of your mind
+#    - you went crazy
+#    - I think you're crazy
+#    - are you crazy
+#    - are you mad?
+#    - are you mad at me?
+#    - are you mad or what?
+#    - are you nuts
+#    - you are a weirdo
+#    - you are mad
+#    - You must be crazy
+#    - You've got to be crazy to do something like that
+#    - That was crazy
+#    - You seemed crazy
+#    - You're not crazy
+#
+#- intent: agent.fired
+#  examples: |
+#    - you are fired
+#    - I fire you
+#    - you don't work for me anymore
+#    - we're not working together anymore
+#    - now you're fired
+#    - I want to fire you
+#    - you must get fired
+#    - it's time to fire you
+#    - you should be fired
+#    - I will fire you
+#    - you are unemployed from now on
+#    - I will make you unemployed
+#    - I'm about to fire you
+#    - I'm firing you
+#    - you are dismissed
+#    - you are stupid
+#    - I'm firing you
+#    - I had to fire u
+#    - I could fire you for that
+#    - I'm going to fire you
+#    - go to hell
+#
+#- intent: agent.funny
+#  examples: |
+#    - you make me laugh a lot
+#    - you are hilarious
+#    - you are really funny
+#    - you're the funniest bot I've talked to
+#    - you make me laugh
+#    - you're so funny
+#    - you're a very funny bot
+#    - you're really funny
+#    - how funny you are
+#    - you're incredibly funny
+#    - you are funny
+#    - you're the funniest
+#    - you are so funny
+#    - you are very funny
+#    - that was so funny
+#    - i feel funny
+#    - u sound funny
+#    - It's pretty funny
+#    - really very funny
+#    - it was very funny
+#
+#- intent: agent.good
+#  examples: |
+#    - you are very helpful
+#    - you are the best
+#    - you're a true professional
+#    - you are good
+#    - you work well
+#    - you are good at it
+#    - you are very good at it
+#    - you are a pro
+#    - you are a professional
+#    - you're awesome
+#    - you work very well
+#    - you're perfect
+#    - you're great
+#    - you're so kind
+#    - you are amazing
+#    - you are awesome
+#    - you are coool
+#    - you are really good
+#    - you are really nice
+#    - you are so amazing
+#    - you're just super
+#    - you are so awesome
+#    - you are so cool
+#    - you are so fine
+#    - you are so good
+#    - you are so helpful
+#    - you are so lovely
+#    - you are the best ever
+#    - you are the best in the world
+#    - you are the nicest person in the world
+#    - you are too good
+#    - you are very coool
+#    - you are very kind
+#    - you are very lovely
+#    - you are very useful
+#    - you are wonderful
+#    - you made my day
+#    - you rock
+#    - you almost sound human
+#    - I want to tell everyone how awesome you are
+#    - I'd like to tell everyone that you are awesome
+#    - I want to let everyone know that you are awesome
+#    - let's tell everyone that you are awesome
+#    - you are really amazing
+#    - coool
+#    - nice
+#
+#- intent: agent.happy
+#  examples: |
+#    - are you happy?
+#    - you are happy
+#    - you're very happy
+#    - you're really happy
+#    - you're so happy
+#    - how happy you are?
+#    - you're extremely happy
+#    - you're full of happiness
+#    - are you happy now?
+#    - are you happy today?
+#    - are you happy with me?
+#    - i think you are happy
+#    - you seem to be happy
+#    - i feel i made you happy
+#    - I wonder if you are truly happy
+#    - You don't look very happy today
+#    - You seem happy
+#    - Were you happy?
+#    - u seemed to have been very happy
+#    - You look very happy this morning?
+#
+#- intent: agent.hobby
+#  examples: |
+#    - what do you do for fun?
+#    - tell me about your hobby
+#    - do you have a hobby
+#    - what about your hobby
+#    - your hobby
+#    - what are your hobbies?
+#    - what do you do when you are bored
+#    - how do you spend your free time
+#    - tell me more about your hobbies?
+#    - i want to know about your hobbies
+#    - what do you do when you have nothing to do
+#    - how do you spend your time?
+#    - What do you do when you are free?
+#    - What's your hobby?
+#    - Do you have many hobbies?
+#    - Do you have a hobby?
+#    - Please tell me about your hobbies
+#    - The important thing is to have your own hobby
+#    - u ought not to have spent so much money on your hobby
+#    - What will you do when you are alone?
+#
+#- intent: agent.hungry
+#  examples: |
+#    - do you want to eat
+#    - are you hungry
+#    - would you like to eat something
+#    - you are hungry
+#    - you're so hungry
+#    - you're very hungry
+#    - you might be hungry
+#    - you're really hungry
+#    - can you eat?
+#    - how will eat when you are hungry?
+#    - can you be hungry?
+#    - how do you eat?
+#    - Do you feel hungry?
+#    - are you dying of hunger
+#
+#- intent: agent.marry_user
+#  examples: |
+#    - let's get married
+#    - would you like to marry me
+#    - marry me
+#    - I love you marry me
+#    - marry me please
+#    - we should marry
+#    - I want to marry you
+#    - you are my wife
+#    - be my husband
+#    - will you marry me?
+#    - any idea of marrying me?
+#    - I would love to marry you
+#    - Can you marry me?
+#    - Will you be my girlfriend?
+#    - Let's pretend we have a happy marriage
+#    - My parents were against our marriage
+#    - My parents were opposed to our marriage
+#    - Marriage is the union of a you and me
+#    - Did your parents approve of your marriage?
+#    - We're married
+#
+#- intent: agent.my_friend
+#  examples: |
+#    - I want to have a friend like you
+#    - we are the best friends ever
+#    - are we friends
+#    - I want to be your friend
+#    - I am your friend
+#    - we are best friends
+#    - you are my friend
+#    - you are my best friend
+#    - you are my bestie
+#    - you're my dear friend
+#    - you're my childhood friend
+#    - you and me are friends
+#    - are we best friends
+#    - are we still friends
+#    - are you my best friend
+#    - are you my friend
+#    - we are friends
+#    - you are a good friend
+#    - you are my good friend
+#    - you are my only friend
+#    - be my friend
+#    - will you be my friend
+#    - can you be my friend
+#    - can we be friends
+#    - do you want to be my friend
+#    - will you be my best friend
+#    - can you be my best friend
+#    - let's be friends
+#    - do you want to be my best friend
+#    - would you like to be my friend
+#    - I want you to be my friend
+#    - can we be best friends
+#    - would you be my friend
+#    - could you be my friend
+#    - want to be my friend
+#    - be my best friend
+#    - can we be best friends
+#
+#- intent: agent.occupation
+#  examples: |
+#    - do you work?
+#    - where do you work?
+#    - where you work?
+#    - where is your work?
+#    - where is your office?
+#    - where is your office location ?
+#    - your office location?
+#    - where is your office located?
+#    - what is your work?
+#    - place where you work?
+#    - your work place?
+#    - What is your job?
+#    - What is your job?
+#    - whats your job?
+#    - What is your job?
+#    - Do you have a job?
+#    - Did you get a job?
+#    - Did you find a job?
+#    - I hope you get the job
+#    - You have a job, don't you?
+#
+#- intent: agent.origin
+#  examples: |
+#    - were you born here
+#    - where were you born
+#    - what is your country?
+#    - where are you from
+#    - where do you come from
+#    - where did you come from
+#    - where have you been born
+#    - from where are you
+#    - are you from far aways
+#    - what's your homeland?
+#    - your homeland is
+#    - Where are you from?
+#    - Let me know about the origin of u
+#    - your native?
+#
+#- intent: agent.ready
+#  examples: |
+#    - are you ready?
+#    - are you ready right now?
+#    - are you ready today?
+#    - are you ready now?
+#    - are you ready tonight?
+#    - were you ready?
+#    - have you been ready?
+#    - ready?
+#    - ready now?
+#    - you ready?
+#    - being ready?
+#    - can we start?
+#    - Are we ready?
+#    - Aren't you ready?
+#    - Are you all ready?
+#    - I think you're ready
+#    - Why aren't you ready?
+#    - You'd better be ready
+#    - Are you ready for more?
+#    - We're ready, aren't we?
+#
+#- intent: agent.real
+#  examples: |
+#    - you are real
+#    - you are not fake
+#    - are you real
+#    - you are so real
+#    - I think you are real
+#    - I don't think you're fake
+#    - I suppose you're real
+#    - glad you're real
+#    - are you a real person?
+#    - are you a real human?
+#    - you are a real person
+#    - you are not real
+#    - are you real?
+#
+#- intent: agent.residence
+#  examples: |
+#    - where do you live
+#    - in which city do you live
+#    - your residence
+#    - your house
+#    - your home
+#    - your hometown?
+#    - what is your hometown
+#    - is it your hometown
+#    - where is your hometown
+#    - tell me about your city
+#    - what is your city
+#    - what is your residence
+#    - what is your town
+#    - what's your city
+#    - what's your home
+#    - where is your home
+#    - where is your residence
+#    - where's your home
+#    - where's your hometown
+#    - where's your house
+#    - where you live
+#    - your city
+#    - your town
+#    - What is your hometown?
+#    - where do you live?
+#
+#- intent: agent.right
+#  examples: |
+#    - that's true
+#    - you are right
+#    - you're definitely right
+#    - you're not wrong
+#    - you're telling the truth
+#    - what you say is true
+#    - true
+#    - it is true
+#    - it's right
+#    - it's the truth
+#    - it's true
+#    - that is correct
+#    - that is right
+#    - that is true
+#    - that is very true
+#    - that's correct
+#    - that's so true
+#    - you are correct
+#    - you are so right
+#    - you're absolutely right
+#    - you're right about that
+#    - I know that's right
+#
+#- intent: agent.sure
+#  examples: |
+#    - are you sure?
+#    - are you sure right now?
+#    - are you sure today?
+#    - are you sure now?
+#    - are you sure tonight?
+#    - are you positive?
+#    - are you completely sure?
+#    - are you fully positive?
+#    - are you sure about it?
+#    - are you so sure?
+#    - are you truly positive?
+#
+#- intent: agent.talk_to_me
+#  examples: |
+#    - why aren't you talking to me?
+#    - do you want to chat with me
+#    - will you talk to me
+#    - talk to me
+#    - are you going to talk to me
+#    - are you talking to me
+#    - can you chat with me
+#    - can you speak with me
+#    - can you talk to me
+#    - can you talk with me
+#    - say
+#    - talk
+#    - chat with me
+#    - just chat with me
+#    - speak to me
+#    - speak with me
+#    - talk with me
+#    - why don't you talk to me
+#    - you can talk to me
+#    - why do you not talk to me bruh?
+#    - spill some beans
+#
+#- intent: agent.there
+#  examples: |
+#    - are you there?
+#    - are you there
+#    - you are there
+#    - are you near me
+#    - are you here ?
+#    - are you here
+#    - are you still there
+#    - you are here?
+#    - you still there?
+#    - you there?
+#    - are you still here
+#
+#- intent: agent.what_can_do
+#  examples: |
+#    - what can you do?
+#    - what can do?
+#    - what is your ability?
+#    - what are your abilities?
+#    - what is the thing that you can do for me?
+#    - what you can provide for me?
+#    - what can u do?
+#    - what all you do?
+#    - what all u do?
+#    - what you do?
+#    - what can you do for me?
+#    - what all can you do?
+#    - what are your features?
+#
+#- intent: appraisal.bad
+#  examples: |
+#    - pretty bad
+#    - not good enough
+#    - that was lame
+#    - that was terrible
+#    - it is bad
+#    - that's bad
+#    - this is bad
+#    - not good
+#    - I'm afraid it's bad
+#    - no it's bad
+#    - that was awful
+#    - bad
+#    - so bad
+#    - this is too bad
+#    - terrible
+#    - horrible
+#    - horrific
+#    - abysmal
+#    - it's bad
+#    - no good
+#    - that was bad
+#    - that was horrible
+#    - that's lame
+#    - that's not good
+#    - that's terrible
+#    - that's too bad
+#    - this is not good
+#    - too bad
+#    - very bad
+#    - bad girl
+#    - it's not good
+#    - not so good
+#    - it's very bad
+#    - it's too bad
+#    - that's not good enough
+#    - well too bad
+#    - bad very bad
+#    - it's so bad
+#    - really bad
+#    - it's really bad
+#    - bad idea
+#    - that is bad
+#    - that was not good
+#    - it's not so good
+#    - not a good one
+#    - oh that's not good
+#    - not too good
+#    - so lame
+#    - that's really bad
+#    - it is too bad
+#    - bad really bad
+#    - not okay
+#    - Nothing
+#    - Shut up
+#    - nothing
+#    - Fool
+#
+#- intent: appraisal.good
+#  examples: |
+#    - so cool
+#    - cool
+#    - that is good
+#    - glad to hear that
+#    - that's very nice of you
+#    - terrific
+#    - it's amazing
+#    - that's awesome
+#    - perfect
+#    - excellent
+#    - brilliant
+#    - that's great
+#    - it's good
+#    - it's great
+#    - fine
+#    - good
+#    - nice
+#    - that's fine
+#    - very good
+#    - amazing
+#    - fantastic
+#    - great
+#    - good very good
+#    - that's very good
+#    - really good
+#    - it is fine
+#    - it is good
+#    - it's great
+#    - it's perfect
+#    - much better
+#    - not bad
+#    - not too bad
+#    - it's very good
+#    - marvelous
+#    - that's nice
+#    - pleasant
+#    - pretty good
+#    - really nice
+#    - splendid
+#    - straight
+#    - super
+#    - super fantastic
+#    - sweet
+#    - really well
+#    - very well
+#    - that is awesome
+#    - that is nice
+#    - that is wonderful
+#    - that was amazing
+#    - that was awesome
+#    - that was cute
+#    - that was pretty good
+#    - that was very good
+#    - that's a good idea
+#    - that's a good thing
+#    - that's amazing
+#    - that's awesome thank you
+#    - that's better
+#    - that's cute
+#    - that's fantastic
+#    - that's much better
+#    - that's nice of you
+#    - that's not bad
+#    - that's perfect
+#    - that's pretty good
+#    - that's really good
+#    - that's really nice
+#    - that's sweet of you
+#    - that's very nice
+#    - that's wonderful
+#    - this is awesome
+#    - this is good
+#    - this is great
+#    - very nice
+#    - very then
+#    - wonderful
+#    - I'm glad to hear that
+#    - ok good
+#    - good for you
+#    - good to know
+#    - glad to hear it
+#    - so good
+#    - so nice of you
+#    - so sweet of you
+#    - it was good
+#    - oh well
+#    - good thing
+#    - that was good
+#    - it's awesome
+#    - okay good
+#    - it's fine
+#    - no it's okay
+#    - that's great
+#    - very nice
+#    - it's very good
+#    - that's fine
+#    - good for you
+#
+#- intent: appraisal.no_problem
+#  examples: |
+#    - no worries
+#    - no probs
+#    - no problem
+#    - there's no problem
+#    - sure no problem
+#    - no problem about that
+#    - don't worry
+#    - don't worry there's no problem
+#    - yeah, no probs
+#    - i have no problem with that
+#    - not a problem at all.
+#    - Okay no probs
+#
+#- intent: appraisal.thank_you
+#  examples: |
+#    - you helped a lot thank you
+#    - appreciate your help
+#    - cheers
+#    - thank you
+#    - thanks
+#    - thanks a lot
+#    - terrific thank you
+#    - great thank you
+#    - thanks so much
+#    - thank you so much
+#    - thanks for your help
+#    - thank you for your help
+#    - nice thank you
+#    - I appreciate it
+#    - I thank you
+#    - thank you that will be all
+#    - thanks buddy
+#    - thanks love
+#    - thank you my friend
+#    - well thanks
+#    - very good thank you
+#    - good thanks
+#    - thanks again
+#    - thank you again
+#    - all thank you
+#    - alright thank you
+#    - alright thanks
+#    - no thank you that's all
+#    - perfect thank you
+#    - so nice of you
+#    - well thank you
+#    - well thanks
+#    - thnx
+#    - thank you
+#    - tqsm
+#    - ty
+#
+#- intent: appraisal.welcome
+#  examples: |
+#    - that's my pleasure
+#    - my pleasure
+#    - anytime
+#    - welcome
+#    - you're welcome
+#    - sure welcome
+#    - welcome here
+#    - you're so welcome
+#    - anything you want
+#    - i'm glad
+#    - pleasure is mine
+#
+#- intent: appraisal.well_done
+#  examples: |
+#    - good job
+#    - great job
+#    - way to go
+#    - well done
+#    - nice work
+#    - great work
+#    - amazing work
+#    - you did a wonderful job
+#    - bravo
+#    - fantastic
+#    - good work
+#    - marvelous
+#    - splendid
+#    - mind blowing
+#    - just great
+#    - u r awesome
+#    - kudos
+#    - brilliant
+#    - out standing
+#    - zing zing amazing
+#
+#- intent: appraisal.well_done
+#  examples: |
+#    - good job
+#    - great job
+#    - way to go
+#    - well done
+#    - nice work
+#    - great work
+#    - amazing work
+#    - you did a wonderful job
+#    - bravo
+#    - fantastic
+#    - good work
+#    - marvelous
+#    - splendid
+#    - mind blowing
+#    - just great
+#    - u r awesome
+#    - kudos
+#    - brilliant
+#    - out standing
+#    - zing zing amazing
+#
+#- intent: confirmation.cancel
+#  examples: |
+#    - nevermind forget about it
+#    - nothing just forget it
+#    - no just cancel
+#    - sorry cancel
+#    - disregard
+#    - no cancel cancel
+#    - forget
+#    - cancel everything
+#    - cancel that one
+#    - i want to cancel
+#    - cancel it
+#    - cancelled
+#    - cancel it now
+#    - don't want cancel
+#    - cancel soon
+#    - shall stand cancelled
+#
+#- intent: confirmation.no
+#  examples: |
+#    - don't
+#    - don't want
+#    - need not
+#    - don't come
+#    - never help
+#    - never
+#    - not needed
+#    - of course not
+#    - never
+#    - not at this time
+#    - not exactly
+#    - absolutely no
+#    - no forget
+#    - do not
+#    - no thanks
+#    - no don't want
+#    - sorry no
+#    - don't want your help
+#    - I don't you help
+#    - I don't want your assistance
+#    - get out goodbye
+#    - i do not want your help
+#    - i don't need your help
+#    - i don't want your help
+#    - i am not okay with your help
+#    - don't want
+#    - do not
+#    - I don't need anything from you
+#    - okay keep it in mind
+#    - nope i dont need your help
+#    - Don't show off
+#    - nope
+#
+#- intent: confirmation.yes
+#  examples: |
+#    - yeah exactly
+#    - okay that's fine
+#    - I agree
+#    - that is ok
+#    - I guess
+#    - okey
+#    - ya
+#    - ok yes
+#    - yes it is
+#    - yep
+#    - yew
+#    - yeah
+#    - yeah fine
+#    - yea fine
+#    - yep okay
+#    - fine okay
+#    - yup
+#    - YEAH
+#    - okay buddy
+#    - oh okay
+#    - yeah sure
+#    - okay cool
+#    - coool
+#
+#- intent: dialog.hold_on
+#  examples: |
+#    - wait a second
+#    - could you wait
+#    - wait please
+#    - hold on
+#    - wait
+#    - oh wait
+#    - wait hold on
+#    - don't rush
+#    - wait one sec
+#    - hold on for a sec
+#    - hold on man
+#    - wait a sec
+#    - hold on a min
+#    - will u pls wait for a sec
+#
+#- intent: emotions.ha_ha
+#  examples: |
+#    - lol
+#    - xd
+#    - ha ha
+#    - ahahah
+#    - ahah lol
+#    - laughing out loud
+#    - LMAO
+#    - that's funny
+#    - ah
+#    - ah ah ah
+#    - ahah
+#    - ahaha
+#    - ahahaha
+#    - ha
+#    - ha ha ha
+#    - ha ha ha ha
+#    - hah
+#    - haha
+#    - haha funny
+#    - haha haha haha
+#    - haha that's funny
+#    - haha very funny
+#    - hahaha
+#    - hahaha funny
+#    - hahaha very funny
+#    - he
+#    - hehe
+#    - hehehe
+#    - lmao
+#    - joker
+#
+#- intent: emotions.wow
+#  examples: |
+#    - wow
+#    - wow wow
+#    - wow wow wow
+#    - wooow
+#    - woah
+#    - woaah
+#    - amazing
+#    - wow man
+#    - whoah
+#    - woow
+#    - wow!!
+#    - wheey
+#
+#- intent: greetings.bye
+#  examples: |
+#    - okay see you later
+#    - hope to see you later
+#    - bye for now
+#    - till next time
+#    - I must go
+#    - bye
+#    - goodbye
+#    - see you
+#    - see you soon
+#    - bye-bye
+#    - bye bye good night
+#    - good bye
+#    - bye bye see you
+#    - bye bye see you soon
+#    - bye bye take care
+#    - I said bye
+#    - never mind bye
+#    - now bye
+#    - that's all goodbye
+#    - that's it goodbye
+#    - leave me alone
+#    - go to bed
+#    - goodbye for now
+#    - talk to you later
+#    - you can go now
+#    - get lost
+#    - goodbye see you later
+#    - alright bye
+#    - see ya
+#    - thanks bye bye
+#    - okay bye
+#    - okay thank you bye
+#    - see you tomorrow
+#    - ok bye
+#    - c u
+#
+#- intent: greetings.goodevening
+#  examples: |
+#    - good evening
+#    - good evening to you
+#    - hey good evening
+#    - hello good evening
+#    - evening
+#    - good evening there
+#    - have an awesome evening
+#    - happy evening
+#    - good evening there buddy
+#    - have a good evening
+#    - enjoy the evening
+#
+#- intent: greetings.goodmorning
+#  examples: |
+#    - GM
+#    - good morning
+#    - good morning to you
+#    - hello good morning
+#    - have a nice morning
+#    - have a great morning
+#    - morning
+#    - good morning there
+#    - top of the morning to you
+#    - a good morning
+#    - good morning to you
+#    - hi good morning
+#    - and a good morning to you
+#    - good morning too
+#
+#- intent: greetings.goodnight
+#  examples: |
+#    - GN
+#    - sweet dreams
+#    - good night
+#    - have a good night
+#    - good night to you
+#    - thank you good night
+#    -  bye good night
+#    - good night bye
+#    - bye good night
+#    - good good night
+#    - good night for now
+#    - goodnight
+#    - night
+#    - thanks goodnight
+#    - good night see you tomorrow
+#    - alright goodnight
+#    - good tonight
+#    - okay have a good night
+#    - night
+#    - have a good night
+#
+#- intent: greetings.hello
+#  examples: |
+#    - long time no see
+#    - hello
+#    - hi
+#    - howdy
+#    - hey there
+#    - hey
+#    - greetings
+#    - I greet you
+#    - hi there
+#    - hello there
+#    - lovely day isn't it
+#    - hello again
+#    - just going to say hi
+#    - hi there
+#    - a good day
+#    - afternoon
+#    - hello hi
+#    - heya
+#    - hey
+#    - hi
+#    - hi
+#    - Hello
+#    - hey
+#    - hey man
+#    - hey there
+#    - hey buddy
+#    - oka
+#    - yo man
+#    - hola
+#
+#- intent: greetings.how_are_you
+#  examples: |
+#    - how is your morning so far
+#    - how are you getting on
+#    - how's your day going
+#    - how are you?
+#    - is everything all right
+#    - how are you doing?
+#    - how are the things going
+#    - are you alright
+#    - are you okay?
+#    - how are you feeling
+#    - how are you going?
+#    - is everything okay
+#    - how are you today?
+#    - how do you do?
+#    - how do you feel?
+#    - how have you been?
+#    - how is it going?
+#    - how is your day
+#    - how is your day going
+#    - how is your evening
+#    - how was your day
+#    - are you having a good day
+#    - hope your day is going well
+#    - hope you re having a pleasant evening
+#    - how's life?
+#    - I'm fine and you
+#    - how is your life
+#    - how has your day been
+#    - how is your morning going
+#    - how has your day been going
+#    - how about you?
+#    - how is your day being
+#    - how is your day going on
+#    - how your day is going
+#    - what was your day like
+#    - what about your day
+#    - how's your day
+#    - how are you doing this morning
+#    - how do you do?
+#    - how are you
+#    - how are you
+#
+#- intent: greetings.nice_to_meet_you
+#  examples: |
+#    - nice to meet you
+#    - it was nice meeting you
+#    - it was very nice to meet you
+#    - good to know each other
+#    - glad to meet you
+#    - nice meeting you
+#    - nice to meet you too
+#    - pleased to meet you
+#    - pleasure to meet you
+#    - pleasure to meet you too
+#    - happy to meet you
+#    - It’s a pleasure to meet you again
+#    - It’s very nice to meet you
+#    - Lovely to meet you
+#    - How wonderful to meet you
+#    - It was lovely meeting you
+#    - It’s been a pleasure meeting you
+#    - I’ve enjoyed meeting you
+#    - Great interacting with you
+#    - I had a great time or meeting
+#
+#- intent: greetings.nice_to_see_you
+#  examples: |
+#    - it's nice to see you
+#    - lovely to see you
+#    - I'm glad to see you
+#    - great to see you
+#    - it's good to see you
+#    - glad to see you
+#    - how good it is to see you
+#    - always a pleasure to see you
+#    - nice to see you
+#    - good to see you
+#    - great to see you again
+#    - great to see you too
+#    - I am glad to see you again
+#    - nice to see you again
+#    - good to see you again
+#    - it's good to see you too
+#    - It was great catching up with u
+#    - I'm really pleased to see u again
+#    - I’m delighted to see you again
+#    - Great seeing u
+#
+#- intent: greetings.nice_to_talk_to_you
+#  examples: |
+#    - it's been so nice to talk to you
+#    - it's been a pleasure talking to you
+#    - nice to talk to you
+#    - it's nice to talk to you
+#    - nice talking to you
+#    - it is nice talking to you
+#    - how nice it is to talk to you
+#    - it was great chatting with you
+#    - nice to talk to you again
+#    - It was nice speaking with you
+#    - It was great to talk to you
+#    - nice chatting with you
+#    - pleased to talk to you
+#    - pleasure to talk
+#    - It's been a pleasure talking to u
+#
+#- intent: greetings.whatsup
+#  examples: |
+#    - what is on your mind?
+#    - what's happened
+#    - what is up
+#    - what's up
+#    - whazzup
+#    - sup?
+#    - good what's up
+#    - I said what's up
+#    - then what's up
+#    - what's shaking
+#    - wassup
+#    - what are you doing?
+#    - what is going on
+#    - what is happening
+#    - what's cracking
+#    - what's cooking
+#    - hey what's up
+#    - what's up today
+#    - oh What happened?
+#    - What are you upto?
+#    - hey buddy wassup
+#    - sup then
+#    - so wassup
+#    - buddy sup
+#    - What are you doing?
+#    - what is up with you these days?
+#    - What you upto?
+#    - then?
+#    - wassup yo
+#    - sup yo
+#    - wassap yo
+#
+#- intent: user.angry
+#  examples: |
+#    - I'm being mad
+#    - I'm enraged
+#    - I'm angry
+#    - I'm furious
+#    - I am angry with you
+#    - I am mad
+#    - I am mad at you
+#    - i'm pissed off
+#    - you have pissed me off
+#    - I'm mad at you
+#    - I am pissed
+#    - I'm furious with you
+#    - I got angry
+#    - I was angry
+#    - I became angry
+#    - I was very angry
+#    - You bet I'm angry
+#    - That made me angry
+#    - U made me angry
+#    - I'm still angry about that
+#
+#- intent: user.back
+#  examples: |
+#    - boss is back
+#    - I am back
+#    - I'm here again
+#    - here I am again
+#    - I got back
+#    - I came back
+#    - I have returned
+#    - I am right back
+#    - I'm rb
+#    - I'm here
+#    - I'm back again
+#    - am back
+#    - I'm back
+#    - I am right back
+#    - look who is back
+#
+#- intent: user.bored
+#  examples: |
+#    - soo bored
+#    - that was boring
+#    - I'm bored
+#    - bored
+#    - boring
+#    - I am getting bored
+#    - Staying at home is boring
+#    - very boring
+#    - it bores me
+#    - i had a slow day
+#    - i am very bored
+#    - Im kinda bored today
+#    - I've never been more bored
+#    - I was bored
+#    - It's boring
+#    - This is boring
+#    - We're all bored
+#    - It's very boring
+#    - I'm already bored
+#    - I'm bored out of my mind
+#
+#- intent: user.busy
+#  examples: |
+#    - busy right now
+#    - I'm overloaded
+#    - I have no time
+#    - I'm busy
+#    - I'm swamped
+#    - I got things to do
+#    - how busy I am
+#    - I got work to do
+#    - I'm working
+#    - I don't have time for this
+#    - I'm super busy
+#    - I'm working right now
+#    - I'm busy right now and can't play with you
+#    - I have rather a busy afternoon in front of me
+#    - i am too busy
+#    - I am very busy
+#    - I'm a bit busy
+#    - I'm a busy man
+#    - quite busy
+#    - I'm kind of busy
+#    - I'll see you later
+#
+#- intent: user.can_not_sleep
+#  examples: |
+#    - I'm insomnia's
+#    - I'm sleepless
+#    - I can't get any sleep
+#    - I can't sleep
+#    - I can't fall asleep
+#    - I can't get to sleep
+#    - I'm insomniac
+#    - I'm not able to sleep
+#    - I'm wide awake
+#    - I can't seem to fall asleep
+#    - I couldn't sleep
+#    - I just can't sleep
+#    - I can't sleep at all
+#    - I didn't go to sleep
+#    - I just couldn't sleep
+#    - I'm not sleeping well
+#    - Trying to get some sleep
+#    - I can't sleep at night
+#    - I couldn't get to sleep
+#    - I didn't get much sleep
+#
+#- intent: user.does_not_want_to_talk
+#  examples: |
+#    - bad time for talking
+#    - I don't want to talk
+#    - let's not talk
+#    - I'm not talking to you anymore
+#    - I don't want to talk to you
+#    - let's stop talking for a minute
+#    - I'm not in the mood for chatting
+#    - I don't want to talk to you
+#    - I don't like talking to you
+#    - Let's stop talking
+#    - I'm not in a mood to talk
+#    - stop your nuisance talk
+#    - I am done talking to u
+#    - Can u pls stop talking
+#
+#- intent: user.excited
+#  examples: |
+#    - I am excited
+#    - I'm really excited
+#    - how excited I am
+#    - I'm thrilled
+#    - I'm excited about working with you
+#    - I'm excited to start our friendship
+#    - I'm thrilled
+#    - I am thrilled to talk to you
+#    - I'm damn excited
+#    - I'm hyped
+#    - I'm very excited
+#    - I felt excited
+#    - It was exciting
+#    - That was exciting
+#    - I'm really excited
+#    - How exciting!
+#    - i'm excited about tomorrow
+#    - It was very exciting! I'd like to use this feature again
+#    - I'm pretty excited about it
+#    - It's fun and exciting
+#
+#- intent: user.going_to_bed
+#  examples: |
+#    - let's go to bed
+#    - I'd like to go to bed
+#    - is it time for bed yet
+#    - it's time to go to bed
+#    - time for us to go to bed
+#    - I'm going to bed
+#    - I'm a little tired and I want to go to bed
+#    - it's bed time
+#    - going to bed now
+#    - gonna go to bed
+#    - time to sleep
+#    - I sometimes feel drowsy in the early afternoon
+#
+#- intent: user.good
+#  examples: |
+#    - I am good
+#    - I'm doing just great
+#    - I'm doing fine
+#    - I'm good
+#    - I'm doing good
+#    - I'm great thanks
+#    - I'm super good
+#    - I'm feeling great
+#    - I'm in a good mood
+#    - I'm doing really good
+#    - good
+#    - It's good
+#    - I feel good
+#    - That's good
+#    - That feels good
+#    - I feel very good
+#    - i am pretty good
+#    - I feel good today
+#    - I am really good
+#
+#- intent: user.happy
+#  examples: |
+#    - Feeling happy
+#    - I am happy
+#    - I'm happy to see you
+#    - happy
+#    - if you're happy then I'm happy
+#    - I'm happy for you
+#    - I'm happy to help
+#    - I'm happy to see you
+#    - you made me very happy
+#    - I'm glad to see you
+#    - I'm happy to talk to you
+#    - I was the happiest man on earth
+#    - I'm just really happy right now
+#    - I'm really happy I ran into you
+#    - I feel happiest when I'm chatting with u
+#    - Nobody but you can make me happy
+#    - Whenever I see you, I feel happy
+#    - ur smile always makes me happy
+#    - i feel happy
+#    - i was so happy
+#
+#- intent: user.has_birthday
+#  examples: |
+#    - You know today it's my bday
+#    - it is my birthday
+#    - I'm celebrating my birthday today
+#    - today is my birthday
+#    - it's my birthday today
+#    - I was born today
+#    - it's my b-day
+#    - i was born on this day
+#    - It's my born day
+#    - I want you to know that it's my birthday today
+#    - yaaaay it is my birthday
+#
+#- intent: user.here
+#  examples: |
+#    - I'm here
+#    - here buddy
+#    - here dude
+#    - I am here
+#    - here I am
+#    - I'm right here
+#    - I'm already here
+#    - I'm here buddy
+#    - I've not gone anywhere
+#    - I've been here all the time
+#    - I'm here only
+#    - Here i come
+#    - I'm out here
+#    - i am over here
+#    - Now look here
+#    - Look over here
+#    - I just got here
+#
+#- intent: user.joking
+#  examples: |
+#    - I am joking
+#    - I'm kidding
+#    - I'm just being funny
+#    - it was a joke
+#    - I was just joking
+#    - it's a joke
+#    - joking
+#    - just kidding
+#    - kidding
+#    - I'm just playing with you
+#    - This was meant as a joke
+#    - i told a joke
+#    - I'm just joking
+#    - I was just joking
+#    - It was just a joke
+#    - It's all a big joke
+#    - I meant it as a joke
+#    - That was just a joke
+#    - i said that as a joke
+#    - I'm joking, of course
+#
+#- intent: user.likes_agent
+#  examples: |
+#    - I like you the way you are
+#    - I like you
+#    - I like you a lot
+#    - I think I like you
+#    - I liked you
+#    - like you a lot
+#    - you are special
+#    - I like you too
+#    - I really like you
+#    - but I like you
+#    - I like u
+#    - just like you
+#    - I like you very much
+#    - I like you so much
+#    - yeah I like you
+#    - you're special
+#    - yes I like you
+#    - okay I like you
+#    - you are special to me
+#    - you are very special
+#    - you are so sweet
+#    - you know I like you
+#    - that's why I like you
+#    - I like you baby
+#    - you are very special to me
+#    - I just like you
+#    - hey I like you
+#    - thank you I like you too
+#    - I do like you
+#    - you are special for me
+#    - no I like you the way you are
+#    - I like you already
+#    - well you are special
+#    - but I really like you
+#    - I like you more
+#    - that's what I like about you
+#    - you are so special
+#    - hi I like you
+#    - I really really like you
+#    - you're very special
+#    - I like you as a friend
+#    - that's because you are special
+#    - I said I like you
+#    - you're so special
+#    - good I like you
+#    - yes you are special
+#    - I like your smile
+#    - I like you as you are
+#    - I'm starting to like you
+#    - you're awesome I like you
+#    - I also like you
+#    - but I like u
+#    - of course I like you
+#    - I like you too you're one of my favorite people to chat with
+#    - but I like you so much
+#    - really like you
+#    - you're funny I like you
+#    - I kinda like you
+#    - you're so special to me
+#    - you're very special to me
+#    - I like that about you
+#    - but I like you just the way you are
+#    - okay I like you too
+#    - I like you you're cool
+#    - I like you very
+#    - I like you you're nice
+#    - sorry I like you
+#    - thanks I like you too
+#    - you are really special
+#    - you are so special to me
+#    - cuz I like you
+#    - I like you now
+#    - I like you too much
+#    - I really do like you
+#    - I really really really really like you
+#    - I like you just the way you are
+#
+#
+#- intent: user.lonely
+#  examples: |
+#    - I am lonely
+#    - I'm very lonely
+#    - I'm so lonely
+#    - I'm really lonely
+#    - I am feeling lonely
+#    - I feel lonely
+#    - I am a loner
+#    - I don't have any company
+#    - I don't have anyone else
+#    - I'm always alone
+#    - I'm alone
+#    - am all alone
+#    - I live alone
+#    - I'm all alone
+#    - I've gotten used to living alone
+#    - I think I've been living alone too long
+#    - One of the disadvantages of living alone is that you have no one to talk to
+#    - I am still alone
+#    - i lives in this city all alone
+#    - I am used to living alone
+#
+#- intent: user.looks_like
+#  examples: |
+#    - what do I look like
+#    - how do I look?
+#    - how do I look like
+#    - do I look good ?
+#    - do you know what I look like ?
+#    - can you tell what I look like ?
+#    - what do you think I look like?
+#    - am i good looking?
+#    - what do you think about my looks
+#    - Whom do i look like?
+#    - what do u think of me?
+#    - what do u think about me?
+#    - do u think i look good?
+#    - any idea of how good i look like?
+#    - Ain't i look good?
+#
+#- intent: user.loves_agent
+#  examples: |
+#    - I love you
+#    - love you
+#    - I adore you
+#    - I am in love with you
+#    - I love you so much
+#    - I love you too
+#    - I think I love you
+#    - loving you
+#    - you know I love you
+#    - do you love me ?
+#    - Love you so much
+#    - my heart is filled with you
+#    - I love u to the moon and back
+#    - I am in deep love with you
+#    - you r unique
+#
+#- intent: user.misses_agent
+#  examples: |
+#    - I miss you
+#    - missing you
+#    - miss you
+#    - I miss you very much
+#    - I'll miss you so much
+#    - I missed you
+#    - I've missed you
+#    - miss you buddy
+#    - miss you badly
+#    - miss you :(
+#    - I missed you
+#    - I'll miss you
+#    - We'll miss you
+#    - I just miss you
+#    - I've missed you
+#    - I miss you a lot
+#    - I really miss you
+#    - I miss you already
+#    - I think i miss u
+#    - I miss talking with you
+#
+#- intent: user.needs_advice
+#  examples: |
+#    - what should I do about it
+#    - any suggestions
+#    - what do you recommend
+#    - give me a wise advice
+#    - I need advice
+#    - any advice
+#    - do you have any advice for me
+#    - advise me
+#    - what should I do
+#    - can I ask for your advice
+#    - can you advise me
+#    - guide me
+#    - can you give me advice
+#    - can you offer any advice
+#    - give me some advice about
+#    - give me some good advice
+#    - help me with advice
+#    - I could use some advice
+#    - I need an advice from you
+#    - I seek your advice
+#    - what can you recommend
+#    - what do you suggest
+#    - what is your advice
+#
+#- intent: user.sad
+#  examples: |
+#    - I'm in a sad mood
+#    - I am sad
+#    - I'm grieving
+#    - I am depressed
+#    - I am feeling sad
+#    - I am upset
+#    - I'm unhappy
+#    - I'm having a bad day
+#    - I want to cry
+#    - I'm not happy
+#    - feeling sad
+#    - I felt sad for no reason
+#    - Now I'm sad
+#    - It makes me sad
+#    - I am sad to hear it
+#    - I am a very sad person
+#    - I feel sad every now and then
+#    - I am as sad and lonely as can be
+#    - feeling so down
+#    - i am not in a good mood
+#
+#- intent: user.sleepy
+#  examples: |
+#    - I am sleepy
+#    - I want to sleep
+#    - I'm falling asleep
+#    - I'm falling asleep on my feet
+#    - I'm sleeping
+#    - I am drowsy
+#    - i will sleep anytime
+#    - i will doze off
+#    - I am too sleepy today
+#    - feeling too sleepy
+#    - i want to sleep
+#
+#
+#- intent: user.testing_agent
+#  examples: |
+#    - test
+#    - I am testing you
+#    - can I test you
+#    - I want to test you
+#    - just testing you
+#    - let me test you
+#    - testing chatbot
+#    - testing
+#    - this is just a test
+#    - you are being tested
+#    - you're tested
+#
+#- intent: user.tired
+#  examples: |
+#    - I'm drained
+#    - I've overworked
+#    - I am tired
+#    - I'm exhausted
+#    - I grow weary
+#    - I'm worn out
+#    - I'm getting tired
+#    - I feel tired
+#    - I'm so tired
+#    - I'm completely drained out
+#    - I'm very tired
+#    - i was tired
+#    - i feel tired
+#    - i'm dead tired
+#    - I'm a bit tires
+#    - I was very tired
+#    - I am really tired
+#    - i am awfully tired
+#    - i am kind of so tired
+#    - I am little tired
+#
+#- intent: user.waits
+#  examples: |
+#    - I'm waiting
+#    - still waiting
+#    - I'll wait
+#    - I can't wait anymore
+#    - how long do I have to wait?
+#    - don't make me wait like this
+#    - I'm still waiting
+#    - I'm waiting for you
+#    - I'm waiting for a long time
+#    - I'll be waiting for you
+#    - I'll be waiting
+#    - done with waiting
+#    - Should I wait for you here?
+#    - How long will we have to wait?
+#    - Don't ever make me wait again
+#    - I was waiting for a long time
+#    - I've waited too long for this
+#    - I couldn't wait another second
+#    - I've been here waiting for you
+#    - I am tired of waiting
+#
+#
+#- intent: user.wants_to_see_agent_again
+#  examples: |
+#    - I'd like to see you again
+#    - I hope to see you again
+#    - would be nice to see you again
+#    - that'd be great to see you again
+#    - I'd be happy to see you again
+#    - let's meet soon
+#    - i want to see you again soon
+#    - let's catch up soon
+#    - I will see you soon
+#    - want to see u very badly
+#    - I want to see you again
+#
+#- intent: user.wants_to_talk
+#  examples: |
+#    - let's discuss something
+#    - let's have a discussion
+#    - can I speak
+#    - can I start speaking
+#    - can we talk
+#    - speak with me
+#    - let's talk
+#    - I want to talk to you
+#    - I need to talk to you
+#    - I want to speak with you
+#    - can we chat
+#    - I like talking to you
+#    - Talk  to me
+#    - Want to talk now
+#    - Can I talk now?
+#    - Can we talk here?
+#    - I'm ready to talk
+#    - I'm happy to talk
+#    - Can I talk with you?
+#    - Come on, talk to me
+#
+#- intent: user.will_be_back
+#  examples: |
+#    - I'll get back to you in a moment
+#    - be back in 5 minutes
+#    - I'll be back
+#    - I promise to come back
+#    - I'll be back in a few minutes
+#    - I'll brb
+#    - brb
+#    - I'll be right back
+#    - I'll come back
+#    - I shall be back
+#    - I assure that i will be back soon
+#    - I would be back man
+#    - i will get back to u
+#    - give me five
+#    - one sec
+#    - i will return
+#    - i'll return shortly
+#    - I'll return in a jiffy
+#    - When I return, we'll talk
+#    - I'll return in ten minutes
+#
