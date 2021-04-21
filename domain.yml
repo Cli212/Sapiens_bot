@@ -137,7 +137,7 @@ responses:
     - text: "What aspects do you want to know?"
   utter_ask_for_questions:
     - text: "Do you have some questions about book Sapiens to ask me?"
-  utter_please_rephrase:
+  utter_default:
     - text: "I'm sorry, I didn't quite understand that. Could you explain it?"
   utter_agent.acquaintance:
     - text: "I'm a virtual agent"
@@ -603,3 +603,4 @@ actions:
   - action_cdqa
   - action_read_sapiens
   - action_fallback
+  - action_tell_more

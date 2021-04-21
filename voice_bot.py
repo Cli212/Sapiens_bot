@@ -53,14 +53,3 @@ if __name__ == "__main__":
 
 
 # with API token authentication
-
-curl --request POST \
-     --url http://34.219.250.232/api/projects/default/git_repositories?api_token=b8753b44dff083260e43607754d3d83557f7442b \
-     --header 'Content-Type: application/json' \
-     --data-raw '{
-        "repository_url": "https://github.com/Cli212/Sapiens_bot.git",
-        "target_branch": "master",
-        "is_target_branch_protected": false,
-        "username": "<your username>",
-        "password": "<your password or personal access token>"
-     }'
