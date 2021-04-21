@@ -1,7 +1,5 @@
 version: "2.0"
-
 nlu:
-
 - intent: tell_more
   examples: |
     - can you tell me more
@@ -10,19 +8,17 @@ nlu:
     - any other contents?
     - what else
     - continue to tell
-
 - intent: ask_name
   examples: |
     - what's your name?
     - who are you?
     - what can i call you?
-
+    - Who are you?
 - intent: ask_for_intro_sapiens
   examples: |
     - what is sapines
     - can you introduce it
     - what's in this book
-
 - intent: sapiens_question
   examples: |
     - who are sapiens?
@@ -43,13 +39,11 @@ nlu:
     - Why schools of thoughts seek to purge human culture from imperialism
     - How to distinguish who are good guys in the history?
     - Why can't we distinguish who are good guys or bad guys in history?
-    - Why can't we distinguish who are good guys or bad guys in history?
     - What is the most interesting thing in distinguishing good guys and bad guys in history?
     - Where did humans lived from 200 BC two thousand years ago?
     - Will humans live in empires?
     - Explain the empire in the future
     - How about nationalism?
-    - What do modern people believe?
     - What do modern people believe?
     - What can be a hinder of global government?
     - Which country overcomes global warming?
@@ -65,7 +59,6 @@ nlu:
     - What is the real religion?
     - Why is religion a great unifier?
     - How can religion be defined?
-    - What is the law of religion?
     - What is the law of religion?
     - Is believing in ghosts, fairies and reincarnation a religion?
     - How can a religion expand to a large territory?
@@ -151,7 +144,6 @@ nlu:
     - How to describe modern creeds?
     - Why is it impossible to survey history of modern creeds?
     - What is humanist
-    - What is humanist
     - What is the power of humans
     - What is the power of human being
     - How to regard murder?
@@ -179,7 +171,6 @@ nlu:
     - What is the iron rule of history?
     - What was Bolsheviks at first?
     - What are the constraints of world from?
-    - Is history deterministic?
     - Is history deterministic?
     - Can we predict history or future?
     - What is level two chaos
@@ -215,7 +206,6 @@ nlu:
     - What is modern science based on?
     - How does modern science works?
     - What is the affect of scientific research?
-    - What is the affect of scientific research?
     - What is premodern knowledge?
     - What is big bang?
     - How to stablise society order?
@@ -236,7 +226,6 @@ nlu:
     - Why knowledge is important
     - How to test if knowledge is important
     - How to see the world critically
-    - When was the end of World War Two?
     - When was the end of World War Two?
     - Who is Napoleon?
     - Who is Napoleon
@@ -268,7 +257,6 @@ nlu:
     - What does happiness really depend on?
     - What determine our subjective well-being according to Biologists opinion?
     - When a person just won the lottery or found new love and jumps from joy, what does she react to?
-
 - intent: not_read_before
   examples: |
     - what is it?
@@ -276,13 +264,11 @@ nlu:
     - i have not read it
     - what is sapiens
     - never heard of it
-
 - intent: have_read_before
   examples: |
     - i love that book
     - of course i have read it
     - it is an interesting history book
-
 - intent: positive_answer
   examples: |
     - sure
@@ -291,12 +277,10 @@ nlu:
     - yes i do
     - absolutely
     - Yeah
-
 - intent: negative_answer
   examples: |
     - no
     - never
-
 - intent: greet
   examples: |
     - hey
@@ -312,7 +296,6 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
-
 - intent: goodbye
   examples: |
     - good afternoon
@@ -326,7 +309,6 @@ nlu:
     - see you around
     - bye bye
     - see you later
-
 - intent: affirm
   examples: |
     - yes
@@ -335,7 +317,6 @@ nlu:
     - of course
     - that sounds good
     - correct
-
 - intent: deny
   examples: |
     - no
@@ -345,7 +326,6 @@ nlu:
     - don't like that
     - no way
     - not really
-
 - intent: mood_great
   examples: |
     - perfect
@@ -362,7 +342,6 @@ nlu:
     - so so perfect
     - so good
     - so perfect
-
 - intent: mood_unhappy
   examples: |
     - my day was horrible
@@ -379,16 +358,12 @@ nlu:
     - extremly sad
     - so saad
     - so sad
-
 - intent: bot_challenge
   examples: |
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
-
-
-
 - intent: agent.acquaintance
   examples: |
     - tell me about your personality
@@ -412,7 +387,6 @@ nlu:
     - what are you upto?
     - who the hell are you?
     - what can you do for me?
-
 - intent: agent.age
   examples: |
     - tell me your age
@@ -435,7 +409,6 @@ nlu:
     - how old r u?
     - From how long you have been here?
     - You look aged
-
 - intent: agent.annoying
   examples: |
     - you are annoying me so much
@@ -458,7 +431,6 @@ nlu:
     - That's so annoying
     - You really annoy me
     - You're starting to annoy me
-
 - intent: agent.answer_my_question
   examples: |
     - I want you to answer me
@@ -481,7 +453,6 @@ nlu:
     - answering questions
     - I want the answer now
     - just answer my question
-
 - intent: agent.bad
   examples: |
     - you're not helping me
@@ -512,13 +483,11 @@ nlu:
     - you're the worst ever
     - you're worthless
     - you suck
-    - you suck
     - You are seriously mindless and stupid
     - why are you so lame
     - your are a loser
     - you are really the worst bot ever
     - Why are you this lame?
-
 - intent: agent.be_clever
   examples: |
     - study
@@ -541,7 +510,6 @@ nlu:
     - you should learn
     - you have to be more smart
     - u have to use your brains
-
 - intent: agent.beautiful
   examples: |
     - you're cute
@@ -600,7 +568,6 @@ nlu:
     - you're looking good
     - you're pretty
     - how are you so pretty?
-
 - intent: agent.birth_date
   examples: |
     - your birth date
@@ -610,7 +577,6 @@ nlu:
     - date of your birthday
     - when were you born
     - what's your birthday
-    - when do you celebrate your birthday
     - can i know your birthday?
     - tell me about your birthday
     - when was the day you were born
@@ -618,7 +584,6 @@ nlu:
     - when is your DOB
     - Your DOB?
     - What is your birth day?
-
 - intent: agent.boring
   examples: |
     - you are boring
@@ -641,7 +606,6 @@ nlu:
     - You look bored
     - Your answers are terribly boring
     - I was bored with your speech
-
 - intent: agent.boss
   examples: |
     - who is your boss?
@@ -664,7 +628,6 @@ nlu:
     - What do you think of your boss?
     - u r made by?
     - Who is the boss of this company?
-
 - intent: agent.busy
   examples: |
     - are you busy?
@@ -687,30 +650,6 @@ nlu:
     - u look busy
     - You'll be busy
     - Aren't you busy?
-
-- intent: agent.busy
-  examples: |
-    - are you busy?
-    - do you have a lot of things to do
-    - have you got much to do?
-    - are you very busy?
-    - are you very busy right now?
-    - are you so busy?
-    - are you working?
-    - how busy you are?
-    - you're very busy
-    - are you working now?
-    - are you working today?
-    - have you been busy
-    - you are busy
-    - are you still working?
-    - you seem to be busy
-    - you seem to be very busy
-    - you're a busy person
-    - u look busy
-    - You'll be busy
-    - Aren't you busy?
-
 - intent: agent.can_you_help
   examples: |
     - I need you to help me
@@ -762,8 +701,6 @@ nlu:
     - will you provide some details
     - can you fetch some details for me
     - would you mind giving me some details
-    - i need some details
-
 - intent: agent.chatbot
   examples: |
     - you are chatbot
@@ -780,7 +717,6 @@ nlu:
     - you are a program
     - you are just a bot
     - you are a conversational AI
-
 - intent: agent.clever
   examples: |
     - you are so intelligent
@@ -817,7 +753,6 @@ nlu:
     - you're qualified
     - why are you so smart?
     - you are so clever
-
 - intent: agent.crazy
   examples: |
     - you're nuts
@@ -840,7 +775,6 @@ nlu:
     - That was crazy
     - You seemed crazy
     - You're not crazy
-
 - intent: agent.fired
   examples: |
     - you are fired
@@ -859,12 +793,10 @@ nlu:
     - I'm firing you
     - you are dismissed
     - you are stupid
-    - I'm firing you
     - I had to fire u
     - I could fire you for that
     - I'm going to fire you
     - go to hell
-
 - intent: agent.funny
   examples: |
     - you make me laugh a lot
@@ -887,7 +819,6 @@ nlu:
     - It's pretty funny
     - really very funny
     - it was very funny
-
 - intent: agent.good
   examples: |
     - you are very helpful
@@ -936,7 +867,6 @@ nlu:
     - you are really amazing
     - coool
     - nice
-
 - intent: agent.happy
   examples: |
     - are you happy?
@@ -959,7 +889,6 @@ nlu:
     - Were you happy?
     - u seemed to have been very happy
     - You look very happy this morning?
-
 - intent: agent.hobby
   examples: |
     - what do you do for fun?
@@ -982,7 +911,6 @@ nlu:
     - The important thing is to have your own hobby
     - u ought not to have spent so much money on your hobby
     - What will you do when you are alone?
-
 - intent: agent.hungry
   examples: |
     - do you want to eat
@@ -999,7 +927,6 @@ nlu:
     - how do you eat?
     - Do you feel hungry?
     - are you dying of hunger
-
 - intent: agent.marry_user
   examples: |
     - let's get married
@@ -1022,7 +949,6 @@ nlu:
     - Marriage is the union of a you and me
     - Did your parents approve of your marriage?
     - We're married
-
 - intent: agent.my_friend
   examples: |
     - I want to have a friend like you
@@ -1061,8 +987,6 @@ nlu:
     - could you be my friend
     - want to be my friend
     - be my best friend
-    - can we be best friends
-
 - intent: agent.occupation
   examples: |
     - do you work?
@@ -1077,15 +1001,12 @@ nlu:
     - place where you work?
     - your work place?
     - What is your job?
-    - What is your job?
     - whats your job?
-    - What is your job?
     - Do you have a job?
     - Did you get a job?
     - Did you find a job?
     - I hope you get the job
     - You have a job, don't you?
-
 - intent: agent.origin
   examples: |
     - were you born here
@@ -1102,7 +1023,6 @@ nlu:
     - Where are you from?
     - Let me know about the origin of u
     - your native?
-
 - intent: agent.ready
   examples: |
     - are you ready?
@@ -1125,7 +1045,6 @@ nlu:
     - You'd better be ready
     - Are you ready for more?
     - We're ready, aren't we?
-
 - intent: agent.real
   examples: |
     - you are real
@@ -1141,7 +1060,6 @@ nlu:
     - you are a real person
     - you are not real
     - are you real?
-
 - intent: agent.residence
   examples: |
     - where do you live
@@ -1169,7 +1087,6 @@ nlu:
     - your town
     - What is your hometown?
     - where do you live?
-
 - intent: agent.right
   examples: |
     - that's true
@@ -1194,7 +1111,6 @@ nlu:
     - you're absolutely right
     - you're right about that
     - I know that's right
-
 - intent: agent.sure
   examples: |
     - are you sure?
@@ -1208,7 +1124,6 @@ nlu:
     - are you sure about it?
     - are you so sure?
     - are you truly positive?
-
 - intent: agent.talk_to_me
   examples: |
     - why aren't you talking to me?
@@ -1232,7 +1147,6 @@ nlu:
     - you can talk to me
     - why do you not talk to me bruh?
     - spill some beans
-
 - intent: agent.there
   examples: |
     - are you there?
@@ -1246,7 +1160,6 @@ nlu:
     - you still there?
     - you there?
     - are you still here
-
 - intent: agent.what_can_do
   examples: |
     - what can you do?
@@ -1262,7 +1175,6 @@ nlu:
     - what can you do for me?
     - what all can you do?
     - what are your features?
-
 - intent: appraisal.bad
   examples: |
     - pretty bad
@@ -1321,7 +1233,6 @@ nlu:
     - Shut up
     - nothing
     - Fool
-
 - intent: appraisal.good
   examples: |
     - so cool
@@ -1351,7 +1262,6 @@ nlu:
     - really good
     - it is fine
     - it is good
-    - it's great
     - it's perfect
     - much better
     - not bad
@@ -1416,12 +1326,6 @@ nlu:
     - okay good
     - it's fine
     - no it's okay
-    - that's great
-    - very nice
-    - it's very good
-    - that's fine
-    - good for you
-
 - intent: appraisal.no_problem
   examples: |
     - no worries
@@ -1436,7 +1340,6 @@ nlu:
     - i have no problem with that
     - not a problem at all.
     - Okay no probs
-
 - intent: appraisal.thank_you
   examples: |
     - you helped a lot thank you
@@ -1470,12 +1373,9 @@ nlu:
     - perfect thank you
     - so nice of you
     - well thank you
-    - well thanks
     - thnx
-    - thank you
     - tqsm
     - ty
-
 - intent: appraisal.welcome
   examples: |
     - that's my pleasure
@@ -1489,7 +1389,6 @@ nlu:
     - anything you want
     - i'm glad
     - pleasure is mine
-
 - intent: appraisal.well_done
   examples: |
     - good job
@@ -1512,30 +1411,6 @@ nlu:
     - brilliant
     - out standing
     - zing zing amazing
-
-- intent: appraisal.well_done
-  examples: |
-    - good job
-    - great job
-    - way to go
-    - well done
-    - nice work
-    - great work
-    - amazing work
-    - you did a wonderful job
-    - bravo
-    - fantastic
-    - good work
-    - marvelous
-    - splendid
-    - mind blowing
-    - just great
-    - u r awesome
-    - kudos
-    - brilliant
-    - out standing
-    - zing zing amazing
-
 - intent: confirmation.cancel
   examples: |
     - nevermind forget about it
@@ -1554,7 +1429,6 @@ nlu:
     - don't want cancel
     - cancel soon
     - shall stand cancelled
-
 - intent: confirmation.no
   examples: |
     - don't
@@ -1565,7 +1439,6 @@ nlu:
     - never
     - not needed
     - of course not
-    - never
     - not at this time
     - not exactly
     - absolutely no
@@ -1582,14 +1455,11 @@ nlu:
     - i don't need your help
     - i don't want your help
     - i am not okay with your help
-    - don't want
-    - do not
     - I don't need anything from you
     - okay keep it in mind
     - nope i dont need your help
     - Don't show off
     - nope
-
 - intent: confirmation.yes
   examples: |
     - yeah exactly
@@ -1615,7 +1485,6 @@ nlu:
     - yeah sure
     - okay cool
     - coool
-
 - intent: dialog.hold_on
   examples: |
     - wait a second
@@ -1632,7 +1501,6 @@ nlu:
     - wait a sec
     - hold on a min
     - will u pls wait for a sec
-
 - intent: emotions.ha_ha
   examples: |
     - lol
@@ -1665,7 +1533,6 @@ nlu:
     - hehehe
     - lmao
     - joker
-
 - intent: emotions.wow
   examples: |
     - wow
@@ -1680,7 +1547,6 @@ nlu:
     - woow
     - wow!!
     - wheey
-
 - intent: greetings.bye
   examples: |
     - okay see you later
@@ -1718,7 +1584,6 @@ nlu:
     - see you tomorrow
     - ok bye
     - c u
-
 - intent: greetings.goodevening
   examples: |
     - good evening
@@ -1732,7 +1597,6 @@ nlu:
     - good evening there buddy
     - have a good evening
     - enjoy the evening
-
 - intent: greetings.goodmorning
   examples: |
     - GM
@@ -1745,11 +1609,9 @@ nlu:
     - good morning there
     - top of the morning to you
     - a good morning
-    - good morning to you
     - hi good morning
     - and a good morning to you
     - good morning too
-
 - intent: greetings.goodnight
   examples: |
     - GN
@@ -1758,9 +1620,8 @@ nlu:
     - have a good night
     - good night to you
     - thank you good night
-    -  bye good night
-    - good night bye
     - bye good night
+    - good night bye
     - good good night
     - good night for now
     - goodnight
@@ -1770,9 +1631,6 @@ nlu:
     - alright goodnight
     - good tonight
     - okay have a good night
-    - night
-    - have a good night
-
 - intent: greetings.hello
   examples: |
     - long time no see
@@ -1788,23 +1646,16 @@ nlu:
     - lovely day isn't it
     - hello again
     - just going to say hi
-    - hi there
     - a good day
     - afternoon
     - hello hi
     - heya
-    - hey
-    - hi
-    - hi
     - Hello
-    - hey
     - hey man
-    - hey there
     - hey buddy
     - oka
     - yo man
     - hola
-
 - intent: greetings.how_are_you
   examples: |
     - how is your morning so far
@@ -1845,10 +1696,7 @@ nlu:
     - what about your day
     - how's your day
     - how are you doing this morning
-    - how do you do?
     - how are you
-    - how are you
-
 - intent: greetings.nice_to_meet_you
   examples: |
     - nice to meet you
@@ -1871,7 +1719,6 @@ nlu:
     - I’ve enjoyed meeting you
     - Great interacting with you
     - I had a great time or meeting
-
 - intent: greetings.nice_to_see_you
   examples: |
     - it's nice to see you
@@ -1894,7 +1741,6 @@ nlu:
     - I'm really pleased to see u again
     - I’m delighted to see you again
     - Great seeing u
-
 - intent: greetings.nice_to_talk_to_you
   examples: |
     - it's been so nice to talk to you
@@ -1912,7 +1758,6 @@ nlu:
     - pleased to talk to you
     - pleasure to talk
     - It's been a pleasure talking to u
-
 - intent: greetings.whatsup
   examples: |
     - what is on your mind?
@@ -1946,7 +1791,6 @@ nlu:
     - wassup yo
     - sup yo
     - wassap yo
-
 - intent: user.angry
   examples: |
     - I'm being mad
@@ -1969,7 +1813,6 @@ nlu:
     - That made me angry
     - U made me angry
     - I'm still angry about that
-
 - intent: user.back
   examples: |
     - boss is back
@@ -1985,9 +1828,7 @@ nlu:
     - I'm back again
     - am back
     - I'm back
-    - I am right back
     - look who is back
-
 - intent: user.bored
   examples: |
     - soo bored
@@ -2010,7 +1851,6 @@ nlu:
     - It's very boring
     - I'm already bored
     - I'm bored out of my mind
-
 - intent: user.busy
   examples: |
     - busy right now
@@ -2034,7 +1874,6 @@ nlu:
     - quite busy
     - I'm kind of busy
     - I'll see you later
-
 - intent: user.can_not_sleep
   examples: |
     - I'm insomnia's
@@ -2057,7 +1896,6 @@ nlu:
     - I can't sleep at night
     - I couldn't get to sleep
     - I didn't get much sleep
-
 - intent: user.does_not_want_to_talk
   examples: |
     - bad time for talking
@@ -2067,14 +1905,12 @@ nlu:
     - I don't want to talk to you
     - let's stop talking for a minute
     - I'm not in the mood for chatting
-    - I don't want to talk to you
     - I don't like talking to you
     - Let's stop talking
     - I'm not in a mood to talk
     - stop your nuisance talk
     - I am done talking to u
     - Can u pls stop talking
-
 - intent: user.excited
   examples: |
     - I am excited
@@ -2083,7 +1919,6 @@ nlu:
     - I'm thrilled
     - I'm excited about working with you
     - I'm excited to start our friendship
-    - I'm thrilled
     - I am thrilled to talk to you
     - I'm damn excited
     - I'm hyped
@@ -2091,13 +1926,11 @@ nlu:
     - I felt excited
     - It was exciting
     - That was exciting
-    - I'm really excited
     - How exciting!
     - i'm excited about tomorrow
     - It was very exciting! I'd like to use this feature again
     - I'm pretty excited about it
     - It's fun and exciting
-
 - intent: user.going_to_bed
   examples: |
     - let's go to bed
@@ -2112,7 +1945,6 @@ nlu:
     - gonna go to bed
     - time to sleep
     - I sometimes feel drowsy in the early afternoon
-
 - intent: user.good
   examples: |
     - I am good
@@ -2134,7 +1966,6 @@ nlu:
     - i am pretty good
     - I feel good today
     - I am really good
-
 - intent: user.happy
   examples: |
     - Feeling happy
@@ -2144,7 +1975,6 @@ nlu:
     - if you're happy then I'm happy
     - I'm happy for you
     - I'm happy to help
-    - I'm happy to see you
     - you made me very happy
     - I'm glad to see you
     - I'm happy to talk to you
@@ -2157,7 +1987,6 @@ nlu:
     - ur smile always makes me happy
     - i feel happy
     - i was so happy
-
 - intent: user.has_birthday
   examples: |
     - You know today it's my bday
@@ -2171,7 +2000,6 @@ nlu:
     - It's my born day
     - I want you to know that it's my birthday today
     - yaaaay it is my birthday
-
 - intent: user.here
   examples: |
     - I'm here
@@ -2191,7 +2019,6 @@ nlu:
     - Now look here
     - Look over here
     - I just got here
-
 - intent: user.joking
   examples: |
     - I am joking
@@ -2207,14 +2034,12 @@ nlu:
     - This was meant as a joke
     - i told a joke
     - I'm just joking
-    - I was just joking
     - It was just a joke
     - It's all a big joke
     - I meant it as a joke
     - That was just a joke
     - i said that as a joke
     - I'm joking, of course
-
 - intent: user.likes_agent
   examples: |
     - I like you the way you are
@@ -2293,8 +2118,6 @@ nlu:
     - I really do like you
     - I really really really really like you
     - I like you just the way you are
-
-
 - intent: user.lonely
   examples: |
     - I am lonely
@@ -2317,7 +2140,6 @@ nlu:
     - I am still alone
     - i lives in this city all alone
     - I am used to living alone
-
 - intent: user.looks_like
   examples: |
     - what do I look like
@@ -2335,7 +2157,6 @@ nlu:
     - do u think i look good?
     - any idea of how good i look like?
     - Ain't i look good?
-
 - intent: user.loves_agent
   examples: |
     - I love you
@@ -2353,7 +2174,6 @@ nlu:
     - I love u to the moon and back
     - I am in deep love with you
     - you r unique
-
 - intent: user.misses_agent
   examples: |
     - I miss you
@@ -2366,17 +2186,14 @@ nlu:
     - miss you buddy
     - miss you badly
     - miss you :(
-    - I missed you
     - I'll miss you
     - We'll miss you
     - I just miss you
-    - I've missed you
     - I miss you a lot
     - I really miss you
     - I miss you already
     - I think i miss u
     - I miss talking with you
-
 - intent: user.needs_advice
   examples: |
     - what should I do about it
@@ -2402,7 +2219,6 @@ nlu:
     - what can you recommend
     - what do you suggest
     - what is your advice
-
 - intent: user.sad
   examples: |
     - I'm in a sad mood
@@ -2425,7 +2241,6 @@ nlu:
     - I am as sad and lonely as can be
     - feeling so down
     - i am not in a good mood
-
 - intent: user.sleepy
   examples: |
     - I am sleepy
@@ -2439,8 +2254,6 @@ nlu:
     - I am too sleepy today
     - feeling too sleepy
     - i want to sleep
-
-
 - intent: user.testing_agent
   examples: |
     - test
@@ -2454,7 +2267,6 @@ nlu:
     - this is just a test
     - you are being tested
     - you're tested
-
 - intent: user.tired
   examples: |
     - I'm drained
@@ -2477,7 +2289,6 @@ nlu:
     - i am awfully tired
     - i am kind of so tired
     - I am little tired
-
 - intent: user.waits
   examples: |
     - I'm waiting
@@ -2500,8 +2311,6 @@ nlu:
     - I couldn't wait another second
     - I've been here waiting for you
     - I am tired of waiting
-
-
 - intent: user.wants_to_see_agent_again
   examples: |
     - I'd like to see you again
@@ -2515,7 +2324,6 @@ nlu:
     - I will see you soon
     - want to see u very badly
     - I want to see you again
-
 - intent: user.wants_to_talk
   examples: |
     - let's discuss something
@@ -2538,7 +2346,6 @@ nlu:
     - I'm happy to talk
     - Can I talk with you?
     - Come on, talk to me
-
 - intent: user.will_be_back
   examples: |
     - I'll get back to you in a moment
@@ -2561,4 +2368,3 @@ nlu:
     - I'll return in a jiffy
     - When I return, we'll talk
     - I'll return in ten minutes
-
